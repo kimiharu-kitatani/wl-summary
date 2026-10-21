@@ -10,22 +10,54 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:
 .c img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.b{padding:10px}
 .t{font-weight:600;font-size:15px;color:#111;text-decoration:none}.m{font-size:12px;color:#666;margin:4px 0}
 .s{font-size:14px;line-height:1.6}ul{padding-left:18px;margin:6px 0;font-size:13px}.n{color:#999;font-size:13px}#cnt{font-size:12px;color:#666;margin-top:6px}
+.c{position:relative}.ck{position:absolute;top:8px;left:8px;width:24px;height:24px;z-index:1;accent-color:#d00}
+.c.sel{outline:3px solid #d00}.c .pr{font-size:12px;margin-top:6px}
+#bar{position:sticky;bottom:0;background:#fff;box-shadow:0 -1px 4px #0002;padding:8px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}
+#bar button{padding:8px 12px;font-size:14px;border-radius:6px;border:1px solid #ccc;background:#fff}#del{background:#d00!important;color:#fff;border-color:#d00!important}#bar button:disabled{opacity:.4}#note{color:#888}
 </style></head><body><header><nav style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><h1 style="margin:0">後で見る 要約一覧</h1><a href="file:///C:/Kita/webdocs/kitatani/dashboard/index.html" style="font-size:13px;color:#06c;text-decoration:none;border:1px solid #06c;border-radius:6px;padding:4px 10px" title="PCのローカルダッシュボード（ブラウザによっては直接開けません）">ダッシュボード</a></nav><div class="ctl">
 <input id="q" type="search" placeholder="タイトル・チャンネル・要約を検索">
 <select id="ch"><option value="">すべてのチャンネル</option></select>
 <select id="f"><option value="">すべて</option><option value="y">要約あり</option><option value="n">要約なし</option></select>
-</div><div id="cnt"></div></header><main id="list"></main><script>
+</div><div id="cnt"></div></header><main id="list"></main>
+<div id="bar"><label><input type="checkbox" id="all"> 表示中をすべて選択</label><button id="del" disabled>選んだ0件を後で見るから削除</button><span id="note">拡張機能を確認中…</span></div><script>
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let D=[];fetch('../data/data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;
+let D=[];const SEL=new Set();let EXT=false,BUSY=false;
+const DK='wl_deleted';const getDel=()=>{try{return new Set(JSON.parse(localStorage.getItem(DK)||'[]'))}catch{return new Set()}};
+const saveDel=s=>localStorage.setItem(DK,JSON.stringify([...s]));
+fetch('../data/data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{const del=getDel(),ids=new Set(d.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i))del.delete(i)});saveDel(del);D=d.filter(x=>!del.has(x.videoId));
  [...new Set(d.map(x=>x.channel).filter(Boolean))].sort().forEach(c=>ch.add(new Option(c,c)));render()})
  .catch(()=>list.innerHTML='<p class="n">data.json を読み込めませんでした</p>');
 function render(){const q=document.getElementById('q').value.toLowerCase(),c=ch.value,fv=f.value;
  const r=D.filter(x=>(!c||x.channel===c)&&(!fv||(fv==='y')===!!x.summary_ja)&&
   (!q||[x.title,x.channel,x.summary_ja,...(x.points||[])].join(' ').toLowerCase().includes(q)));
- cnt.textContent=`${r.length} / ${D.length} 件`;
- list.innerHTML=r.map(x=>`<div class="c"><a href="${esc(x.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
+ cnt.textContent=`${r.length} / ${D.length} 件`;VIS=r;setTimeout(()=>typeof updBar==='function'&&updBar());
+ list.innerHTML=r.map(x=>`<div class="c${SEL.has(x.videoId)?' sel':''}" data-id="${esc(x.videoId)}"><input type="checkbox" class="ck" data-id="${esc(x.videoId)}"${SEL.has(x.videoId)?' checked':''} aria-label="選択"><a href="${esc(x.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
  <a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="m">${esc(x.channel)}${x.duration?' ・ '+esc(x.duration):''}</div>
  ${x.summary_ja?`<div class="s">${esc(x.summary_ja)}</div>${x.points&&x.points.length?'<ul>'+x.points.map(p=>'<li>'+esc(p)+'</li>').join('')+'</ul>':''}`
  :`<div class="n">${x.captions==='no_captions'?'字幕がないため要約できません':'要約はまだありません'}</div>`}</div></div>`).join('')}
 ['q','ch','f'].forEach(i=>document.getElementById(i).addEventListener('input',render));
+let VIS=[];const del=document.getElementById('del'),all=document.getElementById('all'),note=document.getElementById('note');
+function updBar(){del.textContent=`選んだ${SEL.size}件を後で見るから削除`;del.disabled=!EXT||BUSY||!SEL.size;all.disabled=!EXT||BUSY;
+ all.checked=VIS.length>0&&VIS.every(x=>SEL.has(x.videoId))}
+list.addEventListener('change',e=>{if(!e.target.classList.contains('ck'))return;const id=e.target.dataset.id;
+ e.target.checked?SEL.add(id):SEL.delete(id);e.target.closest('.c').classList.toggle('sel',e.target.checked);updBar()});
+all.addEventListener('change',()=>{VIS.forEach(x=>all.checked?SEL.add(x.videoId):SEL.delete(x.videoId));render()});
+const ORIGIN=location.origin;
+window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!e.data)return;const m=e.data;
+ if(m.type==='WL_PONG'){EXT=true;note.textContent='';updBar()}
+ if(m.type==='WL_DELETE_PROGRESS'){
+  if(m.id){const c=list.querySelector(`.c[data-id="${m.id}"] .b`);if(c){let p=c.querySelector('.pr');if(!p){p=document.createElement('div');p.className='pr';c.appendChild(p)}
+   p.textContent=m.ok?'✅ 削除しました':'❌ 削除失敗: '+(m.error||'');p.style.color=m.ok?'#080':'#c00'}
+   if(m.ok){const s=getDel();s.add(m.id);saveDel(s);SEL.delete(m.id)}done++;note.textContent=`削除中… ${done}/${total}`}
+  if(m.done){BUSY=false;const s=getDel();D=D.filter(x=>!s.has(x.videoId));
+   note.textContent=m.error?'エラー: '+m.error:`完了: ${(m.removed||[]).length}/${total} 件削除${m.commit?'（'+m.commit+'）':''}`;
+   setTimeout(render,1500)}}});
+let done=0,total=0;
+del.addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
+ if(!confirm(`選んだ${ids.length}件をYouTubeの「後で見る」から削除します。よろしいですか？`))return;
+ BUSY=true;done=0;total=ids.length;note.textContent=`削除中… 0/${total}`;updBar();
+ window.postMessage({type:'WL_DELETE',ids},ORIGIN)});
+window.postMessage({type:'WL_PING'},ORIGIN);
+setTimeout(()=>{if(!EXT){note.textContent='PCのChrome（拡張機能入り）で開くと削除できます';updBar()}},1000);
+updBar();
 </script></body></html>
