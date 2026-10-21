@@ -223,64 +223,64 @@
   "chars": 14287
  },
  "bDeR_VyyXV8": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:54:37.908Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 15113
  },
  "zOGb2whfcmo": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:54:43.606Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 19226
  },
  "dbJaQv-GNWc": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:54:46.989Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 8709
  },
  "sqGw1K78E2c": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:54:50.850Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 7111
  },
  "UprxfhdGc14": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:54:55.525Z"
+  "status": "ok",
+  "lang": "ja",
+  "chars": 13281
  },
  "-zjMJFUs9SY": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:00.973Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 15947
  },
  "L-eIpQDREsk": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:06.282Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 9324
  },
  "UtIFqImz6GM": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:09.989Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 2665
  },
  "7q-bGPi4P54": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:13.767Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 29939
  },
  "jp9B7arMftE": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:19.015Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 11128
  },
  "Hcsr-UT7S74": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:24.549Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 5952
  },
  "-2jcyUZOixI": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:55:28.258Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 19149
  },
  "nwljsKJMM24": {
   "status": "error",
