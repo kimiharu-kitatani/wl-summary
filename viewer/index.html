@@ -13,7 +13,8 @@ main{padding:12px;max-width:1400px;margin:auto}.grid{display:grid;grid-template-
 h2.grp{font-size:15px;margin:18px 0 8px;padding-left:8px;border-left:4px solid #d00}h2.grp span{color:#888;font-weight:400;font-size:12px}
 .c{position:relative;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px #0002;display:flex;flex-direction:column}
 .c img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#ddd}.b{padding:10px}
-.ck{position:absolute;top:8px;left:8px;width:24px;height:24px;z-index:1;accent-color:#d00}.c.sel{outline:3px solid #d00}
+.hd{display:flex;gap:4px;align-items:flex-start}.ckw{flex:0 0 44px;height:44px;margin:-10px 0 -6px -10px;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px}.ckw:hover{background:#fee}
+.ck{width:24px;height:24px;margin:0;accent-color:#d00;cursor:pointer}#st{font-weight:600}#st.ng{color:#c00}#st.ok{color:#080}.c.sel{outline:3px solid #d00}
 .t{font-weight:600;font-size:15px;color:#111;text-decoration:none}.m{font-size:12px;color:#666;margin:4px 0;display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
 .pri{border:0;background:none;font-size:18px;cursor:pointer;padding:0 1px;color:#ccc;line-height:1}.pri.on{color:#f5a400}
 .s{font-size:14px;line-height:1.6}ul{padding-left:18px;margin:6px 0;font-size:13px}.n{color:#999;font-size:13px}
@@ -33,7 +34,7 @@ details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;col
 <label class="gl"><input type="checkbox" id="grp"> チャンネルごとにまとめる</label>
 </div><div id="cnt"></div></header><main id="list"></main>
 <div id="bar"><label><input type="checkbox" id="all"> 表示中をすべて選択</label>
-<button id="del" disabled>後で見るから削除</button><button id="det" disabled>詳しい要約を作成</button><span id="note">拡張機能を確認中…</span></div>
+<button id="del" disabled>後で見るから削除</button><button id="det" disabled>詳しい要約を作成</button><button id="cp" disabled>IDをコピー</button><span id="st"></span><span id="note"></span></div>
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -47,9 +48,9 @@ fetch('../data/data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
  [...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));render()})
  .catch(()=>$('list').innerHTML='<p class="n">data.json を読み込めませんでした</p>');
 function card(x){const id=x.videoId,p=PRI[id]||0;
- return `<div class="c${SEL.has(id)?' sel':''}" data-id="${esc(id)}"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択">
+ return `<div class="c${SEL.has(id)?' sel':''}" data-id="${esc(id)}">
  <a href="${esc(x.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
- <a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>
+ <div class="hd"><label class="ckw" title="選択"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択"></label><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>
  <div class="m"><span>${esc(x.channel)}${x.duration?' ・ '+esc(x.duration):''}${x.upload_date?' ・ 投稿 '+esc(x.upload_date):''}</span>
  <span title="優先度（もう一度押すと解除）">${[1,2,3].map(n=>`<button class="pri${p>=n?' on':''}" data-id="${esc(id)}" data-n="${n}" aria-label="優先度${n}">★</button>`).join('')}</span></div>
  ${x.summary_ja?`<div class="s">${esc(x.summary_ja)}</div>${x.points&&x.points.length?'<ul>'+x.points.map(q=>'<li>'+esc(q)+'</li>').join('')+'</ul>':''}`
@@ -70,21 +71,27 @@ function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').v
   $('list').innerHTML=[...g].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0],'ja')).map(([k,v])=>`<h2 class="grp">${esc(k)} <span>${v.length}件</span></h2><div class="grid">${v.map(card).join('')}</div>`).join('')}
  else $('list').innerHTML=`<div class="grid">${r.map(card).join('')}</div>`;
  updBar()}
-function updBar(){const n=SEL.size;$('del').textContent=`選んだ${n}件を後で見るから削除`;$('det').textContent=`選んだ${n}件の詳しい要約を作成`;
- $('del').disabled=$('det').disabled=!EXT||BUSY||!n;$('all').disabled=BUSY;
+function updBar(){const n=SEL.size;$('del').textContent=`選んだ${n}件を後で見るから削除`;
+ $('det').textContent=EXT?`選んだ${n}件の詳しい要約を作成`:`選んだ${n}件の詳しい要約をリクエスト（GitHub）`;
+ $('del').disabled=!EXT||BUSY||!n;$('det').disabled=BUSY||!n;$('cp').disabled=!n;$('all').disabled=BUSY;
  $('all').checked=VIS.length>0&&VIS.every(x=>SEL.has(x.videoId));
- if(EXT&&!BUSY&&!n)$('note').textContent='動画を選ぶとボタンが押せます'}
+ const st=$('st');
+ if(BUSY){st.textContent='';st.className=''}
+ else if(!EXT&&CHECKING){st.textContent='拡張機能を確認中…';st.className=''}
+ else if(!EXT){st.textContent='⚠ 拡張機能が見つかりません（削除はPCのChrome＋拡張機能v2.4以上が必要）';st.className='ng'}
+ else if(!n){st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中 ・ 動画を選ぶとボタンが押せます`;st.className='ok'}
+ else{st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中`;st.className='ok'}}
 ['q','ch','f','sort','grp'].forEach(i=>$(i).addEventListener('input',render));
 $('list').addEventListener('change',e=>{if(!e.target.classList.contains('ck'))return;const id=e.target.dataset.id;
- e.target.checked?SEL.add(id):SEL.delete(id);e.target.closest('.c').classList.toggle('sel',e.target.checked);if(EXT&&!BUSY)$('note').textContent='';updBar()});
+ e.target.checked?SEL.add(id):SEL.delete(id);e.target.closest('.c').classList.toggle('sel',e.target.checked);$('note').textContent='';updBar()});
 $('list').addEventListener('click',e=>{const b=e.target.closest('.pri');if(!b)return;const id=b.dataset.id,n=+b.dataset.n;
  PRI[id]=PRI[id]===n?0:n;if(!PRI[id])delete PRI[id];localStorage.setItem(PK,JSON.stringify(PRI));render()});
 $('all').addEventListener('change',()=>{VIS.forEach(x=>$('all').checked?SEL.add(x.videoId):SEL.delete(x.videoId));render()});
 // ---- 拡張機能との連携（ハンドシェイクは再試行＋拡張側からの名乗りでも有効化） ----
 const ORIGIN=location.origin;let done=0,total=0;
-function setExt(){if(EXT)return;EXT=true;$('note').textContent='';updBar()}
+let EXTV='',CHECKING=true;function setExt(v){if(v)EXTV=v;if(EXT){updBar();return}EXT=true;CHECKING=false;$('note').textContent='';updBar()}
 window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!e.data)return;const m=e.data;
- if(m.type==='WL_PONG'||m.type==='WL_EXT_READY')setExt();
+ if(m.type==='WL_PONG'||m.type==='WL_EXT_READY')setExt(m.version);
  if(m.type==='WL_DELETE_PROGRESS'){
   if(m.id){const c=document.querySelector(`.c[data-id="${m.id}"] .b`);if(c){let p=c.querySelector('.pr');if(!p){p=document.createElement('div');p.className='pr';c.appendChild(p)}
    p.textContent=m.ok?'✅ 削除しました':'❌ 削除失敗: '+(m.error||'');p.style.color=m.ok?'#080':'#c00'}
@@ -98,8 +105,16 @@ $('del').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
  if(!confirm(`選んだ${ids.length}件をYouTubeの「後で見る」から削除します。よろしいですか？`))return;
  BUSY=true;done=0;total=ids.length;$('note').textContent=`削除中… 0/${total}`;updBar();window.postMessage({type:'WL_DELETE',ids},ORIGIN)});
 $('det').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
+ if(!EXT){const ti=D.filter(x=>SEL.has(x.videoId)).map(x=>`- ${x.videoId} ${x.title}`).join('\n');
+  const body=`詳しい要約を作成してください。\n\n${ti}\n\n<!-- ids: ${ids.join(',')} -->`;
+  const url='https://github.com/kimiharu-kitatani/wl-summary/issues/new?title='+encodeURIComponent(`詳しい要約のリクエスト（${ids.length}件）`)+'&labels=detail-request&body='+encodeURIComponent(body);
+  if(url.length>7000){navigator.clipboard?.writeText(ids.join('\n'));$('note').textContent='件数が多いためIDをコピーしました。開いたIssueに貼り付けてください';window.open('https://github.com/kimiharu-kitatani/wl-summary/issues/new?title='+encodeURIComponent('詳しい要約のリクエスト'),'_blank','noopener')}
+  else{window.open(url,'_blank','noopener');$('note').textContent='GitHubのIssue画面を開きました。「Create」を押すとリクエストになります'}
+  return}
  if(!confirm(`選んだ${ids.length}件の詳しい要約をリクエストします（GitHubに記録し、あとでBotが作成します）。よろしいですか？`))return;
  BUSY=true;$('note').textContent='リクエストを記録中…';updBar();window.postMessage({type:'WL_DETAIL_REQUEST',ids},ORIGIN)});
-let tries=0;const ping=setInterval(()=>{if(EXT||++tries>30){clearInterval(ping);if(!EXT){$('note').textContent='PCのChrome（拡張機能入り）で開くと削除・リクエストができます';updBar()}}else window.postMessage({type:'WL_PING'},ORIGIN)},500);
+$('cp').addEventListener('click',async()=>{const ids=[...SEL].join('\n');try{await navigator.clipboard.writeText(ids);$('note').textContent=`${SEL.size}件のIDをコピーしました`}catch{prompt('IDをコピーしてください',ids)}});
+let tries=0;const ping=setInterval(()=>{if(EXT||++tries>30){clearInterval(ping);CHECKING=false;updBar()}else window.postMessage({type:'WL_PING'},ORIGIN)},500);
+updBar();
 window.postMessage({type:'WL_PING'},ORIGIN);
 </script></body></html>
