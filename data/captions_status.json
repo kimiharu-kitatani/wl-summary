@@ -1,28 +1,28 @@
 {
  "ZgHrjyluLH8": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:51:17.287Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 4909
  },
  "IGAfB83_93c": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:51:21.879Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 16593
  },
  "_KI6rlU_DJ4": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:51:26.214Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 864
  },
  "1gBk2r1C5_U": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:51:31.142Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 12096
  },
  "EK1P8Yn6NJA": {
-  "status": "error",
-  "detail": "字幕データが空でした（YouTube側の制限の可能性）",
-  "fetchedAt": "2026-10-21T21:51:35.322Z"
+  "status": "ok",
+  "lang": "ja-auto",
+  "chars": 7586
  },
  "p6Bv2rWKDE4": {
   "status": "error",
