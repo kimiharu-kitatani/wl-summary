@@ -19,7 +19,7 @@ h2.grp{font-size:15px;margin:18px 0 8px;padding-left:8px;border-left:4px solid #
 .pri{border:0;background:none;font-size:18px;cursor:pointer;padding:0 1px;color:#ccc;line-height:1}.pri.on{color:#f5a400}
 .s{font-size:14px;line-height:1.6}ul{padding-left:18px;margin:6px 0;font-size:13px}.n{color:#999;font-size:13px}
 details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;color:#06c}.badge{display:inline-block;font-size:11px;background:#eef;color:#336;border-radius:4px;padding:1px 6px;margin-top:6px}
-.pr{font-size:12px;margin-top:6px}
+.pr{font-size:12px;margin-top:6px}.c.rm{opacity:.75}.c.rm img{filter:grayscale(1)}.rmb{display:inline-block;font-size:11px;background:#666;color:#fff;border-radius:4px;padding:1px 6px;margin-bottom:4px}
 #bar{position:sticky;bottom:0;background:#fff;box-shadow:0 -1px 4px #0002;padding:8px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;z-index:2}
 #bar button{padding:8px 12px;font-size:14px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
 #del{background:#d00!important;color:#fff;border-color:#d00!important}#det{background:#06c!important;color:#fff;border-color:#06c!important}#bar button:disabled{opacity:.4;cursor:default}#note{color:#888}
@@ -31,6 +31,7 @@ details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;col
 <select id="sort" aria-label="並び替え">
 <option value="wl">後で見るの並び順（追加日の代わり）</option><option value="wlr">後で見るの並び順・逆</option>
 <option value="up">投稿日が新しい順</option><option value="upr">投稿日が古い順</option><option value="pri">優先度が高い順</option></select>
+<select id="arc" aria-label="削除済みの表示"><option value="">削除済みを隠す</option><option value="all">削除済みも表示</option><option value="only">削除済みのみ</option></select>
 <label class="gl"><input type="checkbox" id="grp"> チャンネルごとにまとめる</label>
 </div><div id="cnt"></div></header><main id="list"></main>
 <div id="bar"><label><input type="checkbox" id="all"> 表示中をすべて選択</label>
@@ -43,14 +44,14 @@ const DK='wl_deleted',PK='wl_priority';
 let D=[],REQ={},VIS=[],EXT=false,BUSY=false;const SEL=new Set();let PRI=LS(PK,{});
 fetch('../data/detail_requests.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).then(j=>{REQ=j||{};render()}).catch(()=>{});
 fetch('../data/data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
- const del=new Set(LS(DK,[])),ids=new Set(d.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i))del.delete(i)});localStorage.setItem(DK,JSON.stringify([...del]));
- D=d.filter(x=>!del.has(x.videoId)).map((x,i)=>({...x,wl_index:x.wl_index??i}));
+ const del=new Set(LS(DK,[])),ids=new Set(d.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i)||d.find(x=>x.videoId===i&&x.removed))del.delete(i)});localStorage.setItem(DK,JSON.stringify([...del]));
+ D=d.map((x,i)=>({...x,wl_index:x.wl_index??i,...(del.has(x.videoId)&&!x.removed?{removed:true,removed_at:new Date().toISOString(),removed_reason:'deleted_from_viewer'}:{})}));
  [...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));render()})
  .catch(()=>$('list').innerHTML='<p class="n">data.json を読み込めませんでした</p>');
 function card(x){const id=x.videoId,p=PRI[id]||0;
- return `<div class="c${SEL.has(id)?' sel':''}" data-id="${esc(id)}">
+ return `<div class="c${SEL.has(id)?' sel':''}${x.removed?' rm':''}" data-id="${esc(id)}">
  <a href="${esc(x.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
- <div class="hd"><label class="ckw" title="選択"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択"></label><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>
+ ${x.removed?`<span class="rmb">削除済み${x.removed_at?'（'+esc(new Date(x.removed_at).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}))+'）':''}</span>`:''}<div class="hd"><label class="ckw" title="選択"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択"></label><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>
  <div class="m"><span>${esc(x.channel)}${x.duration?' ・ '+esc(x.duration):''}${x.upload_date?' ・ 投稿 '+esc(x.upload_date):''}</span>
  <span title="優先度（もう一度押すと解除）">${[1,2,3].map(n=>`<button class="pri${p>=n?' on':''}" data-id="${esc(id)}" data-n="${n}" aria-label="優先度${n}">★</button>`).join('')}</span></div>
  ${x.summary_ja?`<div class="s">${esc(x.summary_ja)}</div>${x.points&&x.points.length?'<ul>'+x.points.map(q=>'<li>'+esc(q)+'</li>').join('')+'</ul>':''}`
@@ -58,7 +59,7 @@ function card(x){const id=x.videoId,p=PRI[id]||0;
  ${x.detail?`<details><summary>詳しい要約を読む</summary><div>${esc(x.detail).replace(/\n/g,'<br>')}</div></details>`:REQ[id]?'<span class="badge">詳しい要約をリクエスト済み</span>':''}
  </div></div>`}
 function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').value,so=$('sort').value;
- let r=D.filter(x=>(!c||x.channel===c)&&(!fv||(fv==='y'&&x.summary_ja)||(fv==='n'&&!x.summary_ja)||(fv==='d'&&x.detail)||(fv==='p'&&PRI[x.videoId]))&&
+ const av=$('arc').value;let r=D.filter(x=>(av==='all'||(av==='only'?x.removed:!x.removed))&&(!c||x.channel===c)&&(!fv||(fv==='y'&&x.summary_ja)||(fv==='n'&&!x.summary_ja)||(fv==='d'&&x.detail)||(fv==='p'&&PRI[x.videoId]))&&
   (!q||[x.title,x.channel,x.summary_ja,x.detail,...(x.points||[])].join(' ').toLowerCase().includes(q)));
  const up=x=>x.upload_date||'';
  const cmp={wl:(a,b)=>a.wl_index-b.wl_index,wlr:(a,b)=>b.wl_index-a.wl_index,
@@ -66,7 +67,7 @@ function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').v
   pri:(a,b)=>((PRI[b.videoId]||0)-(PRI[a.videoId]||0))||(a.wl_index-b.wl_index)}[so];
  r.sort(cmp);VIS=r;
  const nd=so.startsWith('up')?r.filter(x=>!x.upload_date).length:0;
- $('cnt').textContent=`${r.length} / ${D.length} 件`+(nd?`（投稿日不明 ${nd} 件は末尾）`:'');
+ const na=D.filter(x=>x.removed).length;$('cnt').textContent=`${r.length} / ${D.length-na} 件`+(na?`（削除済み ${na} 件は${av?'表示中':'非表示'}）`:'')+(nd?`（投稿日不明 ${nd} 件は末尾）`:'');
  if($('grp').checked){const g=new Map();r.forEach(x=>{const k=x.channel||'（チャンネル不明）';g.has(k)||g.set(k,[]);g.get(k).push(x)});
   $('list').innerHTML=[...g].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0],'ja')).map(([k,v])=>`<h2 class="grp">${esc(k)} <span>${v.length}件</span></h2><div class="grid">${v.map(card).join('')}</div>`).join('')}
  else $('list').innerHTML=`<div class="grid">${r.map(card).join('')}</div>`;
@@ -81,7 +82,7 @@ function updBar(){const n=SEL.size;$('del').textContent=`選んだ${n}件を後�
  else if(!EXT){st.textContent='⚠ 拡張機能が見つかりません（削除はPCのChrome＋拡張機能v2.4以上が必要）';st.className='ng'}
  else if(!n){st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中 ・ 動画を選ぶとボタンが押せます`;st.className='ok'}
  else{st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中`;st.className='ok'}}
-['q','ch','f','sort','grp'].forEach(i=>$(i).addEventListener('input',render));
+['q','ch','f','sort','grp','arc'].forEach(i=>$(i).addEventListener('input',render));
 $('list').addEventListener('change',e=>{if(!e.target.classList.contains('ck'))return;const id=e.target.dataset.id;
  e.target.checked?SEL.add(id):SEL.delete(id);e.target.closest('.c').classList.toggle('sel',e.target.checked);$('note').textContent='';updBar()});
 $('list').addEventListener('click',e=>{const b=e.target.closest('.pri');if(!b)return;const id=b.dataset.id,n=+b.dataset.n;
@@ -96,12 +97,12 @@ window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!
   if(m.id){const c=document.querySelector(`.c[data-id="${m.id}"] .b`);if(c){let p=c.querySelector('.pr');if(!p){p=document.createElement('div');p.className='pr';c.appendChild(p)}
    p.textContent=m.ok?'✅ 削除しました':'❌ 削除失敗: '+(m.error||'');p.style.color=m.ok?'#080':'#c00'}
    if(m.ok){const s=new Set(LS(DK,[]));s.add(m.id);localStorage.setItem(DK,JSON.stringify([...s]));SEL.delete(m.id)}done++;$('note').textContent=`削除中… ${done}/${total}`}
-  if(m.done){BUSY=false;const s=new Set(LS(DK,[]));D=D.filter(x=>!s.has(x.videoId));
+  if(m.done){BUSY=false;const s=new Set(LS(DK,[]));D.forEach(x=>{if(s.has(x.videoId)&&!x.removed)Object.assign(x,{removed:true,removed_at:new Date().toISOString()})});
    $('note').textContent=m.error?'エラー: '+m.error:`完了: ${(m.removed||[]).length}/${total} 件削除${m.commit?'（'+m.commit+'）':''}`;setTimeout(render,1500)}}
  if(m.type==='WL_DETAIL_RESULT'){BUSY=false;
   if(m.ok){(m.ids||[]).forEach(id=>{REQ[id]=REQ[id]||{requestedAt:new Date().toISOString()};SEL.delete(id)});render();$('note').textContent=`詳しい要約のリクエストを ${(m.ids||[]).length} 件記録しました`}
   else{$('note').textContent='リクエストの記録に失敗: '+(m.error||'');updBar()}}});
-$('del').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
+$('del').addEventListener('click',()=>{const rmd=new Set(D.filter(x=>x.removed).map(x=>x.videoId));const ids=[...SEL].filter(i=>!rmd.has(i));if(!ids.length){$('note').textContent='選んだ動画はすべて削除済みです';return}
  if(!confirm(`選んだ${ids.length}件をYouTubeの「後で見る」から削除します。よろしいですか？`))return;
  BUSY=true;done=0;total=ids.length;$('note').textContent=`削除中… 0/${total}`;updBar();window.postMessage({type:'WL_DELETE',ids},ORIGIN)});
 $('det').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
