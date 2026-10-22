@@ -1530,9 +1530,13 @@
   "url": "https://www.youtube.com/watch?v=CDDaqgtcAj0",
   "wl_index": 83,
   "thumbnail": "https://i.ytimg.com/vi/CDDaqgtcAj0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "大阪と東京のトップ配達員2人が、Uber Eatsで稼ぐための1日の立ち回りやルーティンを話す対談動画です。何時に出て、どう動き、何時に帰るかといった具体的な稼働プランを紹介しています。なお、自動字幕の精度が低く、細部は読み取りにくい内容です。",
+  "points": [
+   "大阪の一番さんと東京の量産さんが登場",
+   "ルーティンを大事にした稼働",
+   "初心者向けのアドバイスを含む"
+  ],
+  "captions": "ok",
   "upload_date": "2022-04-02"
  },
  {
@@ -1543,9 +1547,13 @@
   "url": "https://www.youtube.com/watch?v=_3QwwydG4ic",
   "wl_index": 84,
   "thumbnail": "https://i.ytimg.com/vi/_3QwwydG4ic/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "安野貴博さんが、AIコーディングの第一線で広がる「ループエンジニアリング」という考え方を解説する動画です。良いプロンプトを書くことより、AIが作業・確認・修正を繰り返す仕組み（ループ）を設計するほうが重要だとし、秘書作業などエンジニア以外の仕事にも役立つと述べています。",
+  "points": [
+   "プロンプトエンジニアリングからの転換",
+   "AIが自分で回す改善ループを設計する",
+   "非エンジニアの業務にも応用できる"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-21"
  },
  {
@@ -1556,9 +1564,13 @@
   "url": "https://www.youtube.com/watch?v=dL9eJJLWSl0",
   "wl_index": 85,
   "thumbnail": "https://i.ytimg.com/vi/dL9eJJLWSl0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "配達系YouTuberの大橋さんと自転車配達員のささんが、Uber Eatsで配達に使える車両を自転車から軽自動車まで実物で紹介する「デリバリー教習所」車両編です。電動自転車、スポーツバイク、スクーター、屋根付きバイク、電動125ccなどを順に取り上げています。",
+  "points": [
+   "自転車から軽自動車まで実車を紹介",
+   "電動自転車・スポーツバイク・スクーター",
+   "屋根付きバイクや電動125ccも"
+  ],
+  "captions": "ok",
   "upload_date": "2024-09-27"
  },
  {
@@ -1569,9 +1581,13 @@
   "url": "https://www.youtube.com/watch?v=2W1y3Lwjor4",
   "wl_index": 86,
   "thumbnail": "https://i.ytimg.com/vi/2W1y3Lwjor4/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "配達4400回超の配達員が、Uber Eatsの配達を自転車からバイクに切り替えるメリットとデメリットを解説する動画です。自転車で1200回、バイクで3200回配達した経験から、メリット7個・デメリット6個を挙げています。",
+  "points": [
+   "自転車1200回・バイク3200回の実績",
+   "シクロクロスからアドレスV50、アドレス125へ",
+   "メリット7つ・デメリット6つ"
+  ],
+  "captions": "ok",
   "upload_date": "2020-04-21"
  },
  {
@@ -1582,9 +1598,13 @@
   "url": "https://www.youtube.com/watch?v=yN7ig93pOak",
   "wl_index": 87,
   "thumbnail": "https://i.ytimg.com/vi/yN7ig93pOak/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ウーバーイーツ配達員のアフさんが、半年前の装備紹介動画が最も見られていたことを受けて、最新のバイク装備を改めて紹介する動画です。稼働の様子はなく、装備の紹介に絞った内容です。",
+  "points": [
+   "2023年に最も再生された装備紹介の続編",
+   "半年で変わった装備を紹介",
+   "稼働映像はなし"
+  ],
+  "captions": "ok",
   "upload_date": "2024-01-06"
  },
  {
@@ -1597,7 +1617,7 @@
   "thumbnail": "https://i.ytimg.com/vi/yfhrQlsOpzg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown",
+  "captions": "no_captions",
   "upload_date": "2020-09-20"
  },
  {
@@ -1608,9 +1628,13 @@
   "url": "https://www.youtube.com/watch?v=rAgruy7F5ZU",
   "wl_index": 89,
   "thumbnail": "https://i.ytimg.com/vi/rAgruy7F5ZU/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "マッスルばよしチャンネルが、50cc原付には極力乗らないほうがよい理由を6つ挙げて解説する動画です。普通免許で乗れて手軽という利点はあるものの、1つ目の理由として法定速度30km制限による街中での危険さを挙げています。",
+  "points": [
+   "普通免許で乗れて安いのは利点",
+   "1つ目の理由は30km制限",
+   "よほどの理由がなければ勧めない立場"
+  ],
+  "captions": "ok",
   "upload_date": "2020-09-16"
  },
  {
@@ -1621,9 +1645,13 @@
   "url": "https://www.youtube.com/watch?v=xy8GScW8ywc",
   "wl_index": 90,
   "thumbnail": "https://i.ytimg.com/vi/xy8GScW8ywc/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "月100万円を稼いだ配達員に、閑散期の乗り切り方と今後の目標を聞くインタビュー動画です。冬以外はほぼ閑散期になるため、季節より「繁忙日・閑散日」と日ごとに考え、雨や配達員の数を見て狙うほうが稼げると語っています。",
+  "points": [
+   "月100万円をぎりぎり達成",
+   "繁忙期より「繁忙日」で考える",
+   "雨や配達員の少なさを狙う"
+  ],
+  "captions": "ok",
   "upload_date": "2023-09-21"
  },
  {
@@ -1634,9 +1662,13 @@
   "url": "https://www.youtube.com/watch?v=HaxWl7uCxR8",
   "wl_index": 91,
   "thumbnail": "https://i.ytimg.com/vi/HaxWl7uCxR8/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ONESTEPの四角いリアボックス45L・58L・65Lを購入して比較する動画です。配達で使っていたサーモスの箱やヘルメットを入れて余裕を確かめ、スクーターに載せた体感の違いもまとめています。",
+  "points": [
+   "45L・58L・65Lの3サイズ比較",
+   "価格は約1万円から",
+   "配達用の箱とヘルメットで容量を確認"
+  ],
+  "captions": "ok",
   "upload_date": "2025-12-12"
  },
  {
@@ -1647,9 +1679,13 @@
   "url": "https://www.youtube.com/watch?v=jhgzF3IXhkQ",
   "wl_index": 92,
   "thumbnail": "https://i.ytimg.com/vi/jhgzF3IXhkQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "成長し続ける人の考え方と体験をテーマにした対談動画で、ゲストが登ったキリマンジャロでの体験が話題の中心です。楽天グループの研修や、U-NEXTの宇野氏など経営者も山に登っていることに触れています。なお、取得できた文字起こしからは結論部分の詳細はわかりません。",
+  "points": [
+   "キリマンジャロ登山の体験談",
+   "経営者や企業研修でも登山が行われる",
+   "成長と体験の関係がテーマ"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-18"
  },
  {
@@ -1660,9 +1696,13 @@
   "url": "https://www.youtube.com/watch?v=xjDXlUM8sJQ",
   "wl_index": 93,
   "thumbnail": "https://i.ytimg.com/vi/xjDXlUM8sJQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "与沢翼さんがタイの自宅にAI副業系YouTuberのあべむつきさん（登録者25万人超）を招き、AIでお金を稼ぐならどうするかを語り合う動画です。冒頭では、あべさんが六本木でAIの本を14冊買って読んだ中に与沢さんの本があったという経緯が語られます。なお、取得できた文字起こしでは、タイトルの「●●」に当たる結論はまだ確認できていません。",
+  "points": [
+   "与沢翼さん×あべむつきさん",
+   "あべさんは登録者25万人超",
+   "AIで稼ぐ方法がテーマ"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-19"
  },
  {
@@ -1673,9 +1713,13 @@
   "url": "https://www.youtube.com/watch?v=yZhYw9q-nks",
   "wl_index": 94,
   "thumbnail": "https://i.ytimg.com/vi/yZhYw9q-nks/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "約1年自転車で配達してきたUber Eats配達員が、初めてレンタルの50cc原付（ホンダ・ダンク）で稼働し、自転車との違いを確かめる動画です。二段階右折などの原付ルールに触れつつ、自転車では受けない7kmの長距離案件にも挑戦しています。なお、自動字幕の精度は低めです。",
+  "points": [
+   "レンタル原付（月1万3000円）で稼働",
+   "二段階右折など50cc特有のルール",
+   "自転車なら取らない7km案件を受注"
+  ],
+  "captions": "ok",
   "upload_date": "2021-08-20"
  },
  {
@@ -1686,9 +1730,13 @@
   "url": "https://www.youtube.com/watch?v=F25yOP-gaZs",
   "wl_index": 95,
   "thumbnail": "https://i.ytimg.com/vi/F25yOP-gaZs/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "自転車配達員がバイクを借りて早朝に配達しながら、原付で気をつけるべき交通ルールを振り返る動画です。最高速度30kmは自転車より楽だが遅く、二段階右折で信号待ちのロスが大きい点が原付二種以上との差だと説明しています。",
+  "points": [
+   "土曜朝3時45分からの稼働",
+   "原付の法定速度は30km",
+   "二段階右折による時間ロス"
+  ],
+  "captions": "ok",
   "upload_date": "2025-06-29"
  },
  {
@@ -1699,9 +1747,13 @@
   "url": "https://www.youtube.com/watch?v=0eWjevPruKg",
   "wl_index": 96,
   "thumbnail": "https://i.ytimg.com/vi/0eWjevPruKg/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "『令和の虎』のスピンオフ「日本未来会議」第2回で、番組を去った虎たちが辞めた本当の理由を議論する動画です。出演のデメリットが大きいなら改善するのが経営者の仕事ではないか、辞め方やタイミングへの配慮が必要ではないかといった意見がぶつかります。",
+  "points": [
+   "3週連続の特別編の第2回",
+   "表向きの「卒業」の裏にある本音",
+   "新たな引退表明にも触れる"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-12"
  },
  {
@@ -1766,7 +1818,8 @@
   "thumbnail": "https://i.ytimg.com/vi/gNaOJcbKbNk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2021-12-21"
  },
  {
   "videoId": "71nIiH19QoM",
@@ -1778,7 +1831,8 @@
   "thumbnail": "https://i.ytimg.com/vi/71nIiH19QoM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-17"
  },
  {
   "videoId": "VDMAGKvoiAA",
@@ -1790,7 +1844,8 @@
   "thumbnail": "https://i.ytimg.com/vi/VDMAGKvoiAA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-22"
  },
  {
   "videoId": "r23jhpptwHk",
@@ -1802,7 +1857,8 @@
   "thumbnail": "https://i.ytimg.com/vi/r23jhpptwHk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-08-18"
  },
  {
   "videoId": "5TfLTdx2ppU",
@@ -1814,7 +1870,8 @@
   "thumbnail": "https://i.ytimg.com/vi/5TfLTdx2ppU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2021-12-06"
  },
  {
   "videoId": "K3ah2e0Eamc",
@@ -1826,7 +1883,8 @@
   "thumbnail": "https://i.ytimg.com/vi/K3ah2e0Eamc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-08-07"
  },
  {
   "videoId": "5QJLZMa4nK4",
@@ -1838,7 +1896,8 @@
   "thumbnail": "https://i.ytimg.com/vi/5QJLZMa4nK4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-03-19"
  },
  {
   "videoId": "SmbPA-2q2eQ",
@@ -1850,7 +1909,8 @@
   "thumbnail": "https://i.ytimg.com/vi/SmbPA-2q2eQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2023-09-03"
  },
  {
   "videoId": "LrGFPtVlpCk",
@@ -1862,7 +1922,8 @@
   "thumbnail": "https://i.ytimg.com/vi/LrGFPtVlpCk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2023-09-13"
  },
  {
   "videoId": "sv9wFojJHLQ",
@@ -1874,7 +1935,8 @@
   "thumbnail": "https://i.ytimg.com/vi/sv9wFojJHLQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2023-03-03"
  },
  {
   "videoId": "lKWxMl0yKQM",
@@ -1886,7 +1948,8 @@
   "thumbnail": "https://i.ytimg.com/vi/lKWxMl0yKQM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2021-02-24"
  },
  {
   "videoId": "xtLHkmOogzI",
@@ -1898,7 +1961,8 @@
   "thumbnail": "https://i.ytimg.com/vi/xtLHkmOogzI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-05-20"
  },
  {
   "videoId": "Wvz9oVEN95A",
@@ -1910,7 +1974,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Wvz9oVEN95A/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2023-01-15"
  },
  {
   "videoId": "yqKcIbelYew",
@@ -1922,7 +1987,8 @@
   "thumbnail": "https://i.ytimg.com/vi/yqKcIbelYew/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-06-04"
  },
  {
   "videoId": "bPd07qipRn8",
@@ -1934,7 +2000,8 @@
   "thumbnail": "https://i.ytimg.com/vi/bPd07qipRn8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-07-27"
  },
  {
   "videoId": "3fbcwgJTNUs",
@@ -1946,7 +2013,8 @@
   "thumbnail": "https://i.ytimg.com/vi/3fbcwgJTNUs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2022-03-30"
  },
  {
   "videoId": "a28nPDo7HlY",
@@ -1958,7 +2026,8 @@
   "thumbnail": "https://i.ytimg.com/vi/a28nPDo7HlY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-08-11"
  },
  {
   "videoId": "yfyuBiEvfzE",
@@ -1970,7 +2039,8 @@
   "thumbnail": "https://i.ytimg.com/vi/yfyuBiEvfzE/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2022-11-07"
  },
  {
   "videoId": "0E0j4dvzf1I",
@@ -1982,7 +2052,8 @@
   "thumbnail": "https://i.ytimg.com/vi/0E0j4dvzf1I/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-08-07"
  },
  {
   "videoId": "6wCPa5Te9L4",
@@ -1994,7 +2065,8 @@
   "thumbnail": "https://i.ytimg.com/vi/6wCPa5Te9L4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-06-07"
  },
  {
   "videoId": "cJXRkv4Hwng",
@@ -2006,7 +2078,8 @@
   "thumbnail": "https://i.ytimg.com/vi/cJXRkv4Hwng/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-10-27"
  },
  {
   "videoId": "wfJcZdM7XC8",
@@ -2018,7 +2091,8 @@
   "thumbnail": "https://i.ytimg.com/vi/wfJcZdM7XC8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-08-12"
  },
  {
   "videoId": "rBaq0QRa1G4",
@@ -2030,7 +2104,8 @@
   "thumbnail": "https://i.ytimg.com/vi/rBaq0QRa1G4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2021-10-24"
  },
  {
   "videoId": "HXvRn68uUaU",
