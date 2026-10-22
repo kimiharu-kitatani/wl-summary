@@ -18,14 +18,16 @@ h2.grp{font-size:15px;margin:18px 0 8px;padding-left:8px;border-left:4px solid #
 .t{font-weight:600;font-size:15px;color:#111;text-decoration:none}.m{font-size:12px;color:#666;margin:4px 0;display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap}
 .prw{display:flex;align-items:center;gap:6px;margin:6px 0;flex-wrap:wrap}.prl{font-size:12px;color:#555}
 .pri{border:1px solid #ddd;background:#fff;font-size:22px;cursor:pointer;padding:2px 5px;color:#bbb;line-height:1;border-radius:6px;min-width:36px;min-height:36px}.pri.on{color:#f5a400;border-color:#f5a400;background:#fff8e6}
-.pin{border:1px solid #ccc;background:#fff;border-radius:16px;padding:6px 10px;font-size:13px;cursor:pointer;min-height:36px}.pin.on{background:#d00;color:#fff;border-color:#d00}.c.pinned{box-shadow:0 0 0 2px #d00,0 1px 3px #0002}
+.pin{border:1px solid #ccc;background:#fff;border-radius:16px;padding:6px 10px;font-size:13px;cursor:pointer;min-height:36px}.pin.on{background:#d00;color:#fff;border-color:#d00}.c.foc{outline:3px solid #06c;outline-offset:2px}.c.sel.foc{outline-color:#06c}.ck:focus-visible{outline:2px solid #06c}
+#kh{font-size:11px;color:#888;margin-left:auto}#sync{font-size:13px;border:1px solid #080;color:#080;background:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;margin-right:6px}#sync:disabled{opacity:.4;cursor:default}#syncst{font-size:12px;color:#555;margin:4px 0 0}
+.c.pinned{box-shadow:0 0 0 2px #d00,0 1px 3px #0002}
 .s{font-size:14px;line-height:1.6}ul{padding-left:18px;margin:6px 0;font-size:13px}.n{color:#999;font-size:13px}
 details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;color:#06c}.badge{display:inline-block;font-size:11px;background:#eef;color:#336;border-radius:4px;padding:1px 6px;margin-top:6px}
 .pr{font-size:12px;margin-top:6px}.c.rm{opacity:.75}.c.rm img{filter:grayscale(1)}.rmb{display:inline-block;font-size:11px;background:#666;color:#fff;border-radius:4px;padding:1px 6px;margin-bottom:4px}
 #bar{position:sticky;bottom:0;background:#fff;box-shadow:0 -1px 4px #0002;padding:8px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;z-index:2}
 #bar button{padding:8px 12px;font-size:14px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
 #del{background:#d00!important;color:#fff;border-color:#d00!important}#det{background:#06c!important;color:#fff;border-color:#06c!important}#bar button:disabled{opacity:.4;cursor:default}#note{color:#888}
-</style></head><body><header><div class="top"><h1>後で見る 要約一覧</h1><a class="dash" href="file:///C:/Kita/webdocs/kitatani/dashboard/index.html" title="PCのローカルダッシュボード（ブラウザによっては直接開けません）">ダッシュボード</a></div>
+</style></head><body><header><div class="top"><h1>後で見る 要約一覧</h1><span><button id="sync" disabled title="拡張機能が必要です">🔄 今すぐ同期</button><a class="dash" href="file:///C:/Kita/webdocs/kitatani/dashboard/index.html" title="PCのローカルダッシュボード（ブラウザによっては直接開けません）">ダッシュボード</a></span></div>
 <div class="ctl">
 <input id="q" type="search" placeholder="タイトル・チャンネル・要約を検索">
 <select id="ch"><option value="">すべてのチャンネル</option></select>
@@ -36,9 +38,9 @@ details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;col
 <option value="up">投稿日が新しい順</option><option value="upr">投稿日が古い順</option></select>
 <select id="arc" aria-label="削除済みの表示"><option value="">削除済みを隠す</option><option value="all">削除済みも表示</option><option value="only">削除済みのみ</option></select>
 <label class="gl"><input type="checkbox" id="grp"> チャンネルごとにまとめる</label>
-</div><div id="cnt"></div></header><main id="list"></main>
+</div><div id="cnt"></div><div id="syncst"></div></header><main id="list"></main>
 <div id="bar"><label><input type="checkbox" id="all"> 表示中をすべて選択</label>
-<button id="del" disabled>後で見るから削除</button><button id="det" disabled>詳しい要約を作成</button><button id="cp" disabled>IDをコピー</button><span id="st"></span><span id="note"></span></div>
+<button id="del" disabled>後で見るから削除</button><button id="det" disabled>詳しい要約を作成</button><button id="cp" disabled>IDをコピー</button><span id="st"></span><span id="note"></span><span id="kh">↑↓←→/j・kで移動・Spaceで選択・Shift+矢印で範囲選択</span></div>
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -53,20 +55,20 @@ function savePrio(){PRIO={pins:[...PINS],stars:PRI,updatedAt:new Date().toISOStr
 fetch('../data/priorities.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&(j.updatedAt||'')>(PRIO.updatedAt||'')){
  PRIO=j;PINS=new Set(j.pins||[]);PRI=j.stars||{};localStorage.setItem('wl_prio',JSON.stringify(PRIO));render()}}).catch(()=>{});
 fetch('../data/detail_requests.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).then(j=>{REQ=j||{};render()}).catch(()=>{});
-fetch('../data/data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+function loadData(bust){return fetch('../data/data.json'+(bust?'?t='+Date.now():''),{cache:'no-cache'}).then(r=>r.json()).then(d=>{
  const del=new Set(LS(DK,[])),ids=new Set(d.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i)||d.find(x=>x.videoId===i&&x.removed))del.delete(i)});localStorage.setItem(DK,JSON.stringify([...del]));
  D=d.map((x,i)=>({...x,wl_index:x.wl_index??i,...(del.has(x.videoId)&&!x.removed?{removed:true,removed_at:new Date().toISOString(),removed_reason:'deleted_from_viewer'}:{})}));
- [...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));render()})
- .catch(()=>$('list').innerHTML='<p class="n">data.json を読み込めませんでした</p>');
+ const cv=$('ch').value;$('ch').length=1;[...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));$('ch').value=cv;render();return d})}
+loadData().catch(()=>$('list').innerHTML='<p class="n">data.json を読み込めませんでした</p>');
 function card(x){const id=x.videoId,p=PRI[id]||0,pn=PINS.has(id);
  return `<div class="c${SEL.has(id)?' sel':''}${x.removed?' rm':''}${pn?' pinned':''}" data-id="${esc(id)}">
- <a href="${esc(x.url)}" target="_blank" rel="noopener"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
- ${x.removed?`<span class="rmb">削除済み${x.removed_at?'（'+esc(new Date(x.removed_at).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}))+'）':''}</span>`:''}<div class="hd"><label class="ckw" title="選択"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択"></label><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div>
+ <a href="${esc(x.url)}" target="_blank" rel="noopener" tabindex="-1"><img loading="lazy" src="${esc(x.thumbnail)}" alt=""></a><div class="b">
+ ${x.removed?`<span class="rmb">削除済み${x.removed_at?'（'+esc(new Date(x.removed_at).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'}))+'）':''}</span>`:''}<div class="hd"><label class="ckw" title="選択"><input type="checkbox" class="ck" data-id="${esc(id)}"${SEL.has(id)?' checked':''} aria-label="選択"></label><a class="t" href="${esc(x.url)}" target="_blank" rel="noopener" tabindex="-1">${esc(x.title)}</a></div>
  <div class="m"><span>${esc(x.channel)}${x.duration?' ・ '+esc(x.duration):''}${x.upload_date?' ・ 投稿 '+esc(x.upload_date):''}</span>
- </div><div class="prw"><button class="pin${pn?' on':''}" data-id="${esc(id)}" aria-pressed="${pn}">${pn?'📌 固定中':'📌 上に固定'}</button><span class="prl">優先度</span>${[1,2,3].map(n=>`<button class="pri${p>=n?' on':''}" data-id="${esc(id)}" data-n="${n}" title="優先度${n}（もう一度押すと解除）" aria-label="優先度${n}">★</button>`).join('')}</div>
+ </div><div class="prw"><button tabindex="-1" class="pin${pn?' on':''}" data-id="${esc(id)}" aria-pressed="${pn}">${pn?'📌 固定中':'📌 上に固定'}</button><span class="prl">優先度</span>${[1,2,3].map(n=>`<button tabindex="-1" class="pri${p>=n?' on':''}" data-id="${esc(id)}" data-n="${n}" title="優先度${n}（もう一度押すと解除）" aria-label="優先度${n}">★</button>`).join('')}</div>
  ${x.summary_ja?`<div class="s">${esc(x.summary_ja)}</div>${x.points&&x.points.length?'<ul>'+x.points.map(q=>'<li>'+esc(q)+'</li>').join('')+'</ul>':''}`
  :`<div class="n">${x.captions==='no_captions'?'字幕がないため要約できません':'要約はまだありません'}</div>`}
- ${x.detail?`<details><summary>詳しい要約を読む</summary><div>${esc(x.detail).replace(/\n/g,'<br>')}</div></details>`:REQ[id]?'<span class="badge">詳しい要約をリクエスト済み</span>':''}
+ ${x.detail?`<details><summary tabindex="-1">詳しい要約を読む</summary><div>${esc(x.detail).replace(/\n/g,'<br>')}</div></details>`:REQ[id]?'<span class="badge">詳しい要約をリクエスト済み</span>':''}
  </div></div>`}
 function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').value,so=$('sort').value;
  const av=$('arc').value;let r=D.filter(x=>(av==='all'||(av==='only'?x.removed:!x.removed))&&(!c||x.channel===c)&&(!fv||(fv==='y'&&x.summary_ja)||(fv==='n'&&!x.summary_ja)||(fv==='d'&&x.detail)||(fv==='p'&&(PRI[x.videoId]||PINS.has(x.videoId))))&&
@@ -81,6 +83,7 @@ function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').v
  if($('grp').checked){const g=new Map();r.forEach(x=>{const k=x.channel||'（チャンネル不明）';g.has(k)||g.set(k,[]);g.get(k).push(x)});
   $('list').innerHTML=[...g].sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0],'ja')).map(([k,v])=>`<h2 class="grp">${esc(k)} <span>${v.length}件</span></h2><div class="grid">${v.map(card).join('')}</div>`).join('')}
  else $('list').innerHTML=`<div class="grid">${r.map(card).join('')}</div>`;
+ if(FOC){const fc=document.querySelector(`#list .c[data-id="${FOC}"]`);fc&&fc.classList.add('foc')}
  updBar()}
 function updBar(){const n=SEL.size;$('del').textContent=`選んだ${n}件を後で見るから削除`;
  $('det').textContent=EXT?`選んだ${n}件の詳しい要約を作成`:`選んだ${n}件の詳しい要約をリクエスト（GitHub）`;
@@ -101,7 +104,7 @@ $('list').addEventListener('click',e=>{const pb=e.target.closest('.pin');if(pb){
 $('all').addEventListener('change',()=>{VIS.forEach(x=>$('all').checked?SEL.add(x.videoId):SEL.delete(x.videoId));render()});
 // ---- 拡張機能との連携（ハンドシェイクは再試行＋拡張側からの名乗りでも有効化） ----
 const ORIGIN=location.origin;let done=0,total=0;
-let EXTV='',CHECKING=true;function setExt(v){if(v)EXTV=v;if(EXT){updBar();return}EXT=true;CHECKING=false;$('note').textContent='';updBar()}
+let EXTV='',CHECKING=true;function setExt(v){if(!SYNCING){$('sync').disabled=false;$('sync').title='後で見るを今すぐ取り込みます'}if(v)EXTV=v;if(EXT){updBar();return}EXT=true;CHECKING=false;$('note').textContent='';updBar()}
 window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!e.data)return;const m=e.data;
  if(m.type==='WL_PONG'||m.type==='WL_EXT_READY')setExt(m.version);
  if(m.type==='WL_DELETE_PROGRESS'){
@@ -127,6 +130,43 @@ $('det').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
  if(!confirm(`選んだ${ids.length}件の詳しい要約をリクエストします（GitHubに記録し、あとでBotが作成します）。よろしいですか？`))return;
  BUSY=true;$('note').textContent='リクエストを記録中…';updBar();window.postMessage({type:'WL_DETAIL_REQUEST',ids},ORIGIN)});
 $('cp').addEventListener('click',async()=>{const ids=[...SEL].join('\n');try{await navigator.clipboard.writeText(ids);$('note').textContent=`${SEL.size}件のIDをコピーしました`}catch{prompt('IDをコピーしてください',ids)}});
+// ---- 今すぐ同期 ----
+let SYNCING=false;
+$('sync').addEventListener('click',()=>{if(!EXT||SYNCING)return;SYNCING=true;$('sync').disabled=true;$('syncst').textContent='🔄 同期を開始…（後で見るを読み込み中）';window.postMessage({type:'WL_SYNC'},location.origin)});
+window.addEventListener('message',e=>{if(e.source!==window||e.origin!==location.origin||!e.data||e.data.type!=='WL_SYNC_PROGRESS')return;const m=e.data;
+ if(m.disconnected){if(SYNCING){SYNCING=false;$('sync').disabled=!EXT;$('syncst').textContent='⚠ 拡張機能との接続が切れました。拡張機能のポップアップで結果を確認してください'}return}
+ if(m.status&&!m.done){$('syncst').textContent='🔄 '+m.status;return}
+ if(m.done){SYNCING=false;$('sync').disabled=!EXT;
+  if(!m.ok){$('syncst').textContent='⚠ 同期失敗: '+(m.result||'');return}
+  const comp=m.complete?`完全に取得（${m.count}件）`:`⚠ 一部のみ取得（${m.count}/${m.expected||'不明'}件、削除判定はしていません）`;
+  $('syncst').textContent=`✅ 同期完了：${comp}・新規 ${m.added}・アーカイブ ${m.archived}・復帰 ${m.restored}。ページへの反映まで数分かかります…`;
+  waitPages(m.fetchedAt,comp,m)}});
+async function waitPages(fetchedAt,comp,m){for(let i=0;i<40;i++){await new Promise(r=>setTimeout(r,i?15000:5000));
+  try{const j=await (await fetch('../data/wl_meta.json?t='+Date.now(),{cache:'no-store'})).json();
+   if(j.fetchedAt===fetchedAt){await loadData(true);$('syncst').textContent=`✅ 反映しました：${comp}・新規 ${m.added}・アーカイブ ${m.archived}・復帰 ${m.restored}`;return}}catch{}
+  $('syncst').textContent=`✅ 同期完了：${comp}。GitHub Pagesへの反映待ち…（${Math.round((i*15+5)/60*10)/10}分経過・通常数分）`}
+ $('syncst').textContent='⚠ 10分待っても反映されません。しばらくしてからページを再読み込みしてください'}
+// ---- キーボード操作 ----
+let FOC=null,ANCHOR=null;
+function cards(){return [...document.querySelectorAll('#list .c')]}
+function setFoc(id,scroll=true){FOC=id;cards().forEach(c=>c.classList.toggle('foc',c.dataset.id===id));
+ const c=document.querySelector(`#list .c[data-id="${id}"]`);if(c){const ck=c.querySelector('.ck');ck&&ck.focus({preventScroll:true});if(scroll)c.scrollIntoView({block:'nearest',behavior:'smooth'})}}
+function colsOf(cs,i){const top=cs[i].offsetTop;let n=0;for(const c of cs){if(c.offsetTop===top&&c.parentNode===cs[i].parentNode)n++}return Math.max(1,n)}
+function toggleSel(id,on){const ck=document.querySelector(`#list .ck[data-id="${id}"]`);if(!ck)return;if(on===undefined)on=!ck.checked;if(ck.checked!==on){ck.checked=on;ck.dispatchEvent(new Event('change',{bubbles:true}))}}
+document.addEventListener('keydown',e=>{const tg=e.target;
+ if(tg.closest&&tg.closest('input[type=search],select,textarea,[contenteditable],header,#bar'))return;
+ if(tg.tagName==='INPUT'&&!tg.classList.contains('ck'))return;
+ if(e.ctrlKey||e.metaKey||e.altKey)return;
+ const cs=cards();if(!cs.length)return;let i=cs.findIndex(c=>c.dataset.id===FOC);
+ const k=e.key;let d=0;
+ if(k==='ArrowRight'||k==='l'||k==='j'&&!e.shiftKey)d=1;else if(k==='ArrowLeft'||k==='h'||k==='k'&&!e.shiftKey)d=-1;
+ else if(k==='ArrowDown'||k==='J')d=i<0?1:colsOf(cs,i);else if(k==='ArrowUp'||k==='K')d=i<0?1:-colsOf(cs,i);
+ if(d){e.preventDefault();const ni=i<0?0:Math.min(cs.length-1,Math.max(0,i+d));const id=cs[ni].dataset.id;
+  if(e.shiftKey){if(!ANCHOR)ANCHOR=FOC||id;const a=cs.findIndex(c=>c.dataset.id===ANCHOR);const [s,t2]=[Math.min(a,ni),Math.max(a,ni)];
+   const on=true;cs.slice(s,t2+1).forEach(c=>toggleSel(c.dataset.id,on))}else ANCHOR=null;
+  setFoc(id);return}
+ if((k===' '||k==='Enter')&&FOC){e.preventDefault();toggleSel(FOC);setFoc(FOC,false);ANCHOR=FOC}});
+document.addEventListener('focusin',e=>{const ck=e.target.closest&&e.target.closest('#list .ck');if(ck&&ck.dataset.id!==FOC){FOC=ck.dataset.id;cards().forEach(c=>c.classList.toggle('foc',c.dataset.id===FOC))}});
 let tries=0;const ping=setInterval(()=>{if(EXT||++tries>30){clearInterval(ping);CHECKING=false;updBar()}else window.postMessage({type:'WL_PING'},ORIGIN)},500);
 updBar();
 window.postMessage({type:'WL_PING'},ORIGIN);
