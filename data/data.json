@@ -3201,9 +3201,13 @@
   "url": "https://www.youtube.com/watch?v=YeT_zxdHjmQ",
   "wl_index": 182,
   "thumbnail": "https://i.ytimg.com/vi/YeT_zxdHjmQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "建築業の投稿者が、名古屋と青森への出張中、新幹線や飛行機でPCを使えない間にClaudeのDispatchで自宅のMac miniに仕事を進めさせた様子を紹介する動画です。仕事の手順を文章にしてClaudeのスキルとして覚えさせておき、金額が一致する見積もりを探す作業や、2つの現場の工事仕様書の作成を任せています。",
+  "points": [
+   "移動中に自宅のMac miniを遠隔で動かす",
+   "手順を文章で渡してClaudeのスキルにする",
+   "見積もり探しや工事仕様書の作成を自動化"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-23"
  },
  {
@@ -3214,9 +3218,13 @@
   "url": "https://www.youtube.com/watch?v=PWfKyxK3-8c",
   "wl_index": 183,
   "thumbnail": "https://i.ytimg.com/vi/PWfKyxK3-8c/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Anthropicが7月24日に公式ブログで公開した、Claude 5世代向けのコンテキストエンジニアリングの新ルールを読み解く解説動画です。Claude Code向けの指示文を8割以上削っても性能が落ちなかったとし、10か月前に自社が勧めていた方法も含めて、従来の常識6つが見直されたと紹介しています。",
+  "points": [
+   "指示文を8割削っても性能は落ちない",
+   "従来のプロンプトのコツは半分が古い",
+   "仕様書の代わりにテストコードを渡す"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-26"
  },
  {
@@ -3227,9 +3235,13 @@
   "url": "https://www.youtube.com/watch?v=jMLSv4WEIiA",
   "wl_index": 184,
   "thumbnail": "https://i.ytimg.com/vi/jMLSv4WEIiA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Claude Code、GPT-Image2、Seedance2をMCPで連携させ、AIでミュージックビデオを制作するライブ配信です。生成した楽曲を流しながら、手作業を減らす制作の流れを試しており、曲の内容をもとにイメージボードを分割して案を作らせるところまで進めています。",
+  "points": [
+   "Claude Code・GPT-Image2・Seedance2を連携",
+   "MCPで手作業を減らす",
+   "イメージボードを分割して案を作成"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-25"
  },
  {
@@ -3240,9 +3252,13 @@
   "url": "https://www.youtube.com/watch?v=7yst8Ee_lH0",
   "wl_index": 185,
   "thumbnail": "https://i.ytimg.com/vi/7yst8Ee_lH0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "AIプログラミング講師の今にさんが、視聴者のリクエストに応え、ローカルLLMを使った無料の音声入力アプリをAIでゼロから開発する様子を実演する動画です。音声入力サービスは課金が高いため、完全無料で自作することを目指し、OSに依存しない作りで認識精度もほぼ完璧だったと評価しています。",
+  "points": [
+   "視聴者のリクエストで制作",
+   "ローカルLLMで完全無料",
+   "OSに依存せず、認識精度はほぼ完璧"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-26"
  },
  {
@@ -3253,9 +3269,13 @@
   "url": "https://www.youtube.com/watch?v=N71_3fxZ7Pk",
   "wl_index": 186,
   "thumbnail": "https://i.ytimg.com/vi/N71_3fxZ7Pk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "視聴者にYouTubeのコミュニティ機能で教えてもらった「買ってよかったもの」を、投稿者が実際に買って試す企画の第1弾です。案件をやめたにもかかわらず約10万円分を購入し、普段使わないジャンルの商品も含めて、スマホ用ゲームコントローラーなどの使い心地を確かめています。",
+  "points": [
+   "視聴者のおすすめを逆に試す企画",
+   "約10万円分を購入",
+   "今後も続けるためおすすめを募集"
+  ],
+  "captions": "ok",
   "upload_date": "2026-02-20"
  },
  {
@@ -3266,9 +3286,13 @@
   "url": "https://www.youtube.com/watch?v=fTsZUkvIMCA",
   "wl_index": 187,
   "thumbnail": "https://i.ytimg.com/vi/fTsZUkvIMCA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "成長率200%を目指すコンサル会社が、今期はAIにオールインするとして、社員がAI活用の成果を共有する社内会議の様子を公開した動画です。打ち合わせの決定事項やToDoをまとめて次回日程をGoogleカレンダーに自動登録する仕組みや、週末に1時間半かかっていた経費精算を約20分に短縮した例が紹介されています。",
+  "points": [
+   "社内の知見を「AIラボ」で共有",
+   "決定事項の共有と次回日程の登録を自動化",
+   "経費精算が1時間半から約20分に"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-23"
  },
  {
@@ -3279,9 +3303,13 @@
   "url": "https://www.youtube.com/watch?v=NgYPvCWd2fk",
   "wl_index": 188,
   "thumbnail": "https://i.ytimg.com/vi/NgYPvCWd2fk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "アリババのQwenから新たに公開された2.4Tパラメーターの「Qwen 3.8 Max」プレビューを実際に使ってみる動画です。オープンウェイト化の予定もあり、Kimi K3、MiniMax M3、GLMなど競合が強くなる中で着実に進化していると評価し、コーディング用のハーネスでの使い勝手や日本語対応を確かめています。",
+  "points": [
+   "Qwen 3.8 Maxのプレビュー版",
+   "オープンウェイト化の予定あり",
+   "競合のKimi・MiniMax・GLMも進化"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-20"
  },
  {
@@ -3292,9 +3320,13 @@
   "url": "https://www.youtube.com/watch?v=SifgnMBh8h0",
   "wl_index": 189,
   "thumbnail": "https://i.ytimg.com/vi/SifgnMBh8h0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "2026年6月25日に始まった「JALモバイル powered by ahamo」を解説し、直接申し込むと損をすると指摘する動画です。月額2970円で毎年1500マイルがたまり国内線の特典航空券に使えますが、JALオプションを同時につけると端末割引やポイント還元が消えるため、ahamoでiPhoneを契約してから後でJALオプションを付けるルートを勧めています。",
+  "points": [
+   "月額2970円でahamoと同額",
+   "国内線往復の特典航空券が1500マイル",
+   "iPhone契約後にJALオプションを追加する"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-17"
  },
  {
@@ -4568,7 +4600,8 @@
   "thumbnail": "https://i.ytimg.com/vi/2--XRzptJO4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-27"
  },
  {
   "videoId": "8iAtjnhyldI",
@@ -4580,7 +4613,8 @@
   "thumbnail": "https://i.ytimg.com/vi/8iAtjnhyldI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-25"
  },
  {
   "videoId": "VGWSsXFaVYA",
@@ -4592,7 +4626,8 @@
   "thumbnail": "https://i.ytimg.com/vi/VGWSsXFaVYA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-08"
  },
  {
   "videoId": "PoPh0izcp4U",
@@ -4604,7 +4639,8 @@
   "thumbnail": "https://i.ytimg.com/vi/PoPh0izcp4U/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-25"
  },
  {
   "videoId": "6aT5a7wIfLI",
@@ -4616,7 +4652,8 @@
   "thumbnail": "https://i.ytimg.com/vi/6aT5a7wIfLI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-26"
  },
  {
   "videoId": "JEG28EBcX8k",
@@ -4628,7 +4665,8 @@
   "thumbnail": "https://i.ytimg.com/vi/JEG28EBcX8k/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-22"
  },
  {
   "videoId": "R6QyQZlxDxI",
@@ -4640,7 +4678,8 @@
   "thumbnail": "https://i.ytimg.com/vi/R6QyQZlxDxI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-06-29"
  },
  {
   "videoId": "IYLfj1nfvgo",
@@ -4652,7 +4691,8 @@
   "thumbnail": "https://i.ytimg.com/vi/IYLfj1nfvgo/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-11-27"
  },
  {
   "videoId": "LDkozAwQjaU",
@@ -4664,7 +4704,8 @@
   "thumbnail": "https://i.ytimg.com/vi/LDkozAwQjaU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-12-07"
  },
  {
   "videoId": "RScEUBvpSQ0",
@@ -4676,7 +4717,8 @@
   "thumbnail": "https://i.ytimg.com/vi/RScEUBvpSQ0/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-10-19"
  },
  {
   "videoId": "r-G2ryyJIbc",
@@ -4688,7 +4730,8 @@
   "thumbnail": "https://i.ytimg.com/vi/r-G2ryyJIbc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-09-20"
  },
  {
   "videoId": "TMnRSV7-MrY",
@@ -4700,7 +4743,8 @@
   "thumbnail": "https://i.ytimg.com/vi/TMnRSV7-MrY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-10-25"
  },
  {
   "videoId": "EOwSpKMsyio",
@@ -4712,7 +4756,8 @@
   "thumbnail": "https://i.ytimg.com/vi/EOwSpKMsyio/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-24"
  },
  {
   "videoId": "OZtv9WemEck",
@@ -4724,7 +4769,8 @@
   "thumbnail": "https://i.ytimg.com/vi/OZtv9WemEck/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-24"
  },
  {
   "videoId": "OFGT8hP-Kto",
@@ -4736,7 +4782,8 @@
   "thumbnail": "https://i.ytimg.com/vi/OFGT8hP-Kto/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-20"
  },
  {
   "videoId": "zEOXv2Idl6U",
