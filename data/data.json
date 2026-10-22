@@ -2572,9 +2572,13 @@
   "url": "https://www.youtube.com/watch?v=cyJ7LwsnIsg",
   "wl_index": 145,
   "thumbnail": "https://i.ytimg.com/vi/cyJ7LwsnIsg/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "原付初心者講座の第9回で、原付でのコンビニへの入り方と出方、駐車場のどこに停めればよいかを実走しながら解説する動画です。左折で入る場合は後方ミラーの確認、ウインカー、左寄せ、巻き込み確認、歩行者確認の順で行い、右折で入る場合は対向車や店から出る車、歩行者に注意するよう説明しています。",
+  "points": [
+   "左折で入るときの確認手順",
+   "右折で入るときは対向車と出庫車に注意",
+   "駐車場の停めやすい場所も紹介"
+  ],
+  "captions": "ok",
   "upload_date": "2022-09-03"
  },
  {
@@ -2585,9 +2589,13 @@
   "url": "https://www.youtube.com/watch?v=CX6PyV_2KyA",
   "wl_index": 146,
   "thumbnail": "https://i.ytimg.com/vi/CX6PyV_2KyA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "原付の初心者講座第8回で、視聴者のリクエストに応えて、二段階右折ではない通常の右折の方法を実走で解説する動画です。1車線の道路、右折専用車線がある道路、二段階右折禁止の多車線交差点のそれぞれで、どの車線から曲がるかを説明しています。",
+  "points": [
+   "1車線なら右に寄って右折",
+   "二段階右折禁止の標識を確認",
+   "2車線以上の右折車線では一番左の車線から"
+  ],
+  "captions": "ok",
   "upload_date": "2016-02-19"
  },
  {
@@ -2598,9 +2606,13 @@
   "url": "https://www.youtube.com/watch?v=oK2r416fKvM",
   "wl_index": 147,
   "thumbnail": "https://i.ytimg.com/vi/oK2r416fKvM/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "現役の教習所指導員が、普通免許で原付に乗れるものの講習なしで乗り始める人向けに、スクーター型50cc原付（ホンダ・Dio）の乗り方を解説する動画です。右レバーが前輪、左レバーが後輪のブレーキで、まずスロットルを戻してから両方のブレーキで減速する手順を説明しています。",
+  "points": [
+   "普通免許で原付に乗れる人向け",
+   "右レバーは前輪、左レバーは後輪ブレーキ",
+   "先にスロットルを戻してからブレーキ"
+  ],
+  "captions": "ok",
   "upload_date": "2022-06-24"
  },
  {
@@ -2611,9 +2623,13 @@
   "url": "https://www.youtube.com/watch?v=-INcCD94M54",
   "wl_index": 148,
   "thumbnail": "https://i.ytimg.com/vi/-INcCD94M54/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "オートバックスのライディングアドバイザーのゆきさんが、初めて原付に乗る人向けに、鍵の操作、シートの開け方、給油などの基本操作と、実際の乗り方を解説する動画です。ホンダ・ジョルノを例に、シート下の書類入れや、荷物でいっぱいの時に使うヘルメットホルダーなども紹介しています。",
+  "points": [
+   "ジョルノ・JOG・タクトは鍵の操作が共通",
+   "シート下に書類入れとヘルメットホルダー",
+   "ハンドルを切って足で押すと方向転換が楽"
+  ],
+  "captions": "ok",
   "upload_date": "2025-05-02"
  },
  {
@@ -2624,9 +2640,13 @@
   "url": "https://www.youtube.com/watch?v=hX9wJZZ1cMQ",
   "wl_index": 149,
   "thumbnail": "https://i.ytimg.com/vi/hX9wJZZ1cMQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "はるさんが、最近日本人がいなくなったと言われるバリ島の中心地クタを歩き、実際の様子と物価を確かめる旅行動画です。1泊約1万2000円のマリオット系「フォーポイント」に泊まり、ビーチウォークやレギャン通りを歩いても日本人観光客はほとんど見当たりませんでした。",
+  "points": [
+   "クタ中心部で日本人を見かけない",
+   "マリオット系ホテルに1泊約1万2000円",
+   "レギャン通りも落ち着いた雰囲気"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-06"
  },
  {
@@ -2637,9 +2657,13 @@
   "url": "https://www.youtube.com/watch?v=ADMxHsKXwdA",
   "wl_index": 150,
   "thumbnail": "https://i.ytimg.com/vi/ADMxHsKXwdA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "建築AIスタジオが、音声入力アプリ「Typeless」を建築業でどう毎日使っているかを紹介する動画です（Typelessからの依頼）。ひそひそ声でもまとまった文章に整えて出力でき、Macではfnキーを押して話し、もう一度押して終了する操作だと実演しています。",
+  "points": [
+   "チャンネル最初の紹介動画もTypeless",
+   "小声でも正確に文字にしてくれる",
+   "Macはfnキーで入力の開始・終了"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-06"
  },
  {
@@ -2650,9 +2674,13 @@
   "url": "https://www.youtube.com/watch?v=Wv-zqJVNv6Y",
   "wl_index": 151,
   "thumbnail": "https://i.ytimg.com/vi/Wv-zqJVNv6Y/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "軽貨物運送会社207の代表が、「軽貨物ドライバーは月100万円稼げる」という広告は本当かを話す動画です。単月で100万円に届く人はいるが毎月ではなく、宅配の荷物は年間約50億個と2000年頃の倍以上に増え、1人あたりの負担も増えていると説明しています。",
+  "points": [
+   "100万円は単月の例で、毎月ではない",
+   "宅配便は年間約50億個に増加",
+   "ドライバー経験が次のキャリアにつながりにくい課題"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-29"
  },
  {
@@ -2663,9 +2691,13 @@
   "url": "https://www.youtube.com/watch?v=LYWzitnWfPs",
   "wl_index": 152,
   "thumbnail": "https://i.ytimg.com/vi/LYWzitnWfPs/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "配達員の聖剣さんが、これからUber Eatsのバイク配達を始める人向けに、装備・維持費・任意保険などのよくある質問に答える動画です。燃費の良いバイクならガソリン代は1万円の売上あたり約300円で、無料アプリで給油を記録して経費を管理していると紹介しています。",
+  "points": [
+   "ヘルメットや駐輪場所などのよくある質問",
+   "燃費リッター50kmならガソリン代は売上1万円あたり約300円",
+   "オイル交換などの維持費や任意保険も解説"
+  ],
+  "captions": "ok",
   "upload_date": "2022-01-12"
  },
  {
@@ -2676,9 +2708,13 @@
   "url": "https://www.youtube.com/watch?v=8h18YbysjDU",
   "wl_index": 153,
   "thumbnail": "https://i.ytimg.com/vi/8h18YbysjDU/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ママチャリでUber Eatsの配達をする投稿者が、初心者でも平日1万円を稼ぐ5つのコツを紹介する動画です。以前は8時間で7500円でしたが、待機（地蔵）時間が長い昼・夜だけでなく朝も配達すること、サバイバルシートで商品を固定することなどで、平日1万円・休日2万円超になったと話しています。",
+  "points": [
+   "朝の配達は単価が高い",
+   "スマホの固定で操作手順を短縮",
+   "仕切り板の代わりにサバイバルシート"
+  ],
+  "captions": "ok",
   "upload_date": "2023-05-02"
  },
  {
@@ -2689,9 +2725,13 @@
   "url": "https://www.youtube.com/watch?v=xlWtcAWgNNQ",
   "wl_index": 154,
   "thumbnail": "https://i.ytimg.com/vi/xlWtcAWgNNQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "自転車・バイク・軽貨物で累計3万5000回以上配達してきた藤原さんが、Uber Eats初心者が配達中に困るトラブルの解決策と対策をまとめた動画です。稼ぐ方法ではなく困りごとへの対処が目的で、領収書はアプリから発行するよう伝えること、タバコの買い物などアプリ外の頼みには応じないことなどを挙げています。",
+  "points": [
+   "2019年末から配達し累計3万5000回以上",
+   "領収書はアプリから発行と伝える",
+   "アプリ外の依頼は断り、しつこければキャンセルも可"
+  ],
+  "captions": "ok",
   "upload_date": "2026-04-23"
  },
  {
@@ -2702,9 +2742,13 @@
   "url": "https://www.youtube.com/watch?v=CnALvhVJouE",
   "wl_index": 155,
   "thumbnail": "https://i.ytimg.com/vi/CnALvhVJouE/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "「1日30分しか寝ない」と称してネットで話題の人物を経営者がガレージに招き、本当なのかを直接問い詰める対談動画です。睡眠時間を削りたい経営者の本音を背景に話を聞き、眠気は血糖値の上昇によるもので運動が一番効くとして、深いスクワットを実演してもらう場面もあります。",
+  "points": [
+   "自称1日30分睡眠のショートスリーパー",
+   "眠気には運動が有効との主張",
+   "スクワット100回を勧める"
+  ],
+  "captions": "ok",
   "upload_date": "2025-09-10"
  },
  {
@@ -2715,9 +2759,13 @@
   "url": "https://www.youtube.com/watch?v=_Tot-PRT0Lc",
   "wl_index": 156,
   "thumbnail": "https://i.ytimg.com/vi/_Tot-PRT0Lc/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ラファエルさんが、ショートスリーパーとして知られ10年ほど睡眠法を教えている堀大輔さんに疑問をぶつける対談動画です。堀さんは、睡眠の常識は文化的に刷り込まれた誤った情報の可能性があるとし、夜中に目が覚めたら起きて活動し、眠くなったらまた寝ればよいと語ります。",
+  "points": [
+   "睡眠法のスクールを約10年運営",
+   "中途覚醒しても悩まなくてよい",
+   "起きて1〜2時間活動し、眠くなったら再び寝る"
+  ],
+  "captions": "ok",
   "upload_date": "2025-12-02"
  },
  {
@@ -2728,9 +2776,13 @@
   "url": "https://www.youtube.com/watch?v=U35WMjyVdmI",
   "wl_index": 157,
   "thumbnail": "https://i.ytimg.com/vi/U35WMjyVdmI/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "投資歴30年のパックンが、竹内由恵さんとりんたろー。さんの番組で、子どもへの投資教育と、為替を気にせず長期で買い続ける投資法を解説する動画です。72を利回りで割ると元本が倍になる年数がわかる「72の法則」と複利の効果を、100万円を年10%で運用する例で説明しています。",
+  "points": [
+   "72の法則：年3%なら24年で2倍",
+   "複利で利益も元本に加わり増える",
+   "現金のままだと価値が目減りする"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-03"
  },
  {
@@ -2741,9 +2793,13 @@
   "url": "https://www.youtube.com/watch?v=qjY1EOdmJZE",
   "wl_index": 158,
   "thumbnail": "https://i.ytimg.com/vi/qjY1EOdmJZE/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ブログで生計を立てて13年のイケハヤさんが、商売で学んだ売り方を8つの原則にまとめて話す動画です。ブログアフィリエイトの最高月収は5118万円でしたが、検索エンジンのアップデートで売上が激減しました。それでも昨年末にはメール1通で12時間に200万円を売れたとして、「手法は死ぬが原則は死なない」と述べています。",
+  "points": [
+   "年商は1億円から6000万円、1500万円へ階段状に減少",
+   "売り場は記事を読み終えた直後に置く",
+   "バズる記事と儲かる記事は別物（1PV200円の記事も）"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-03"
  },
  {
@@ -2754,9 +2810,13 @@
   "url": "https://www.youtube.com/watch?v=S-Xf5_HFqPs",
   "wl_index": 159,
   "thumbnail": "https://i.ytimg.com/vi/S-Xf5_HFqPs/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ヨーロッパ在住の「ラコ」さんが、2026年7月からnoteは才能がなくても後発の初心者ほど有利なプラットフォームに変わると主張する動画です。note発の作品が書籍化や世界配信につながる公式の流れができつつあるとし、最初は小さなテーマの1作目でよいと勧めています。",
+  "points": [
+   "2026年7月からの変化を根拠に解説",
+   "優秀賞は賞金300万円＋連載＋世界配信権",
+   "まずはスマホで小さな1作目から"
+  ],
+  "captions": "ok",
   "upload_date": "2026-06-25"
  },
  {
@@ -2767,9 +2827,13 @@
   "url": "https://www.youtube.com/watch?v=2agCzOvo5Dc",
   "wl_index": 160,
   "thumbnail": "https://i.ytimg.com/vi/2agCzOvo5Dc/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "「なくなる仕事」にデザイナーが挙がる中、株式会社日本デザインの社長にAI時代のデザイナーの将来を聞く対談動画です。3流・4流のデザイナーはAIに置き換えられるが、本気でクライアントのことを考えてアイデアを出せる総合力のある人は追いつかれないだろうとし、これはどの職業にも当てはまると述べています。",
+  "points": [
+   "サボってきた人から置き換わる",
+   "クライアント視点のアイデアはAIには難しい",
+   "全職業に共通する話"
+  ],
+  "captions": "ok",
   "upload_date": "2026-01-22"
  },
  {
@@ -2780,9 +2844,13 @@
   "url": "https://www.youtube.com/watch?v=Tl_dxnkRtAk",
   "wl_index": 161,
   "thumbnail": "https://i.ytimg.com/vi/Tl_dxnkRtAk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "パソコン病院が、秋葉原のインバースで買ったジャンクMacBook（2012年モデル）を復活させ、AIエージェント「Manus」を使ってスターバックスでアプリ開発に挑む動画です。プログラミングができなくても、ゴールを伝えればManusが手順を計画・実行し、オンライン修理受付のWebアプリをベースにiPhoneアプリまで作る流れを紹介しています。",
+  "points": [
+   "14年前のMacBookを数千円で購入",
+   "古いSafariの代わりにFirefoxを導入",
+   "ManusがWebアプリ→iPhoneアプリを作成"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-31"
  },
  {
@@ -2793,9 +2861,13 @@
   "url": "https://www.youtube.com/watch?v=Y-4ME3PMYtk",
   "wl_index": 162,
   "thumbnail": "https://i.ytimg.com/vi/Y-4ME3PMYtk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "M-1王者の野田クリスタルさんと梶谷健人さんが、野田さんのアイデア発想法をAIのスキルにする対談動画です（スキルは無料配布）。アイデアを出す一番の条件は締め切りがあることで、まず「もうやられているのでは」と疑い、皆が降りるところのさらに先にヒントがあるという考え方を語っています。",
+  "points": [
+   "一番の条件は締め切り",
+   "既出を疑い、水平思考で別の方法を探す",
+   "みんなが降りる先にヒントがある"
+  ],
+  "captions": "ok",
   "upload_date": "2026-08-02"
  },
  {
@@ -2806,9 +2878,13 @@
   "url": "https://www.youtube.com/watch?v=dvk3rm24mrk",
   "wl_index": 163,
   "thumbnail": "https://i.ytimg.com/vi/dvk3rm24mrk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "1週間前に登場した「Claude Design」と、画像生成が向上した「ChatGPT Images 2」を組み合わせ、外注なら30万円ほどのWebサイトを2〜3時間で作る方法を紹介する動画です。Claude Designだけだとデザインが似通いがちなので、生成した画像素材とアイコンを渡してランディングページを作らせています。",
+  "points": [
+   "Claude Design単体ではデザインが似通う",
+   "GPT Image 2で素材を作って渡す",
+   "2〜3時間でAI感の少ないサイトを作成"
+  ],
+  "captions": "ok",
   "upload_date": "2026-04-23"
  },
  {
@@ -2819,9 +2895,13 @@
   "url": "https://www.youtube.com/watch?v=OQlmkgh59Uo",
   "wl_index": 164,
   "thumbnail": "https://i.ytimg.com/vi/OQlmkgh59Uo/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "M-1王者の野田クリスタルさんと梶谷健人さんが、AIを使うだけの人と作れる人の差について、野田さんが自作しているAIツールを例に話す対談動画です。ローカルにデータを置かずクラウド上で完結する「野田エージェント」や、AIが記事を要約・選別する情報処理サービス、チャットで食事を記録するトレーニングアプリなどを紹介しています。",
+  "points": [
+   "バイブコーディングで自作",
+   "クラウド上で完結するエージェントを構想",
+   "Googleマップ連携で低カロリーの店を探す案"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-31"
  },
  {
@@ -2832,9 +2912,13 @@
   "url": "https://www.youtube.com/watch?v=S4m4U6lLN8g",
   "wl_index": 165,
   "thumbnail": "https://i.ytimg.com/vi/S4m4U6lLN8g/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "賢すぎて国が止めたと話題のAI「Claude Fable 5」の使い方トップ5を、寸劇形式で紹介する動画です。テストの点数では半額のOpus 5がFable 5を上回ることも多いものの、Fable 5は5年分の請求書やSlackから業務の暗黙ルールや過去のトラブルを読み取り、引き継ぎ資料を作れる点が強みだと説明しています。",
+  "points": [
+   "テストの点数はOpus 5とほぼ差がない",
+   "過去の資料から暗黙のルールを推測",
+   "業務の全体像と過去のトラブル集を自動作成"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-30"
  },
  {
@@ -3549,7 +3633,8 @@
   "thumbnail": "https://i.ytimg.com/vi/7jSPm0lwsV0/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-09"
  },
  {
   "videoId": "XykZRQjNH40",
@@ -3561,7 +3646,8 @@
   "thumbnail": "https://i.ytimg.com/vi/XykZRQjNH40/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-10"
  },
  {
   "videoId": "Qw6sOGhRg8U",
@@ -3573,7 +3659,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Qw6sOGhRg8U/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-11"
  },
  {
   "videoId": "3FZmyiHXSMI",
@@ -3585,7 +3672,8 @@
   "thumbnail": "https://i.ytimg.com/vi/3FZmyiHXSMI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-10"
  },
  {
   "videoId": "FM9wm9YIM2o",
@@ -3597,7 +3685,8 @@
   "thumbnail": "https://i.ytimg.com/vi/FM9wm9YIM2o/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-10"
  },
  {
   "videoId": "M0aAHMyZgTQ",
@@ -3609,7 +3698,8 @@
   "thumbnail": "https://i.ytimg.com/vi/M0aAHMyZgTQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-22"
  },
  {
   "videoId": "Gn0siY3vzQY",
@@ -3621,7 +3711,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Gn0siY3vzQY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "d4CHl4j1108",
@@ -3633,7 +3724,8 @@
   "thumbnail": "https://i.ytimg.com/vi/d4CHl4j1108/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-20"
  },
  {
   "videoId": "guwKnHpCtCQ",
@@ -3645,7 +3737,8 @@
   "thumbnail": "https://i.ytimg.com/vi/guwKnHpCtCQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-10-28"
  },
  {
   "videoId": "bHtv4mKfntc",
@@ -3657,7 +3750,8 @@
   "thumbnail": "https://i.ytimg.com/vi/bHtv4mKfntc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-11-20"
  },
  {
   "videoId": "ywqyQNLCwZk",
@@ -3669,7 +3763,8 @@
   "thumbnail": "https://i.ytimg.com/vi/ywqyQNLCwZk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-11-29"
  },
  {
   "videoId": "qREGuKk0hJQ",
@@ -3681,7 +3776,8 @@
   "thumbnail": "https://i.ytimg.com/vi/qREGuKk0hJQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-03-16"
  },
  {
   "videoId": "mBFRxQBeGmc",
@@ -3693,7 +3789,8 @@
   "thumbnail": "https://i.ytimg.com/vi/mBFRxQBeGmc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-08"
  },
  {
   "videoId": "3_dYDRHZkto",
@@ -3705,7 +3802,8 @@
   "thumbnail": "https://i.ytimg.com/vi/3_dYDRHZkto/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-05-02"
  },
  {
   "videoId": "lazgHuB4SLA",
@@ -3717,7 +3815,8 @@
   "thumbnail": "https://i.ytimg.com/vi/lazgHuB4SLA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2024-09-21"
  },
  {
   "videoId": "DAcUVFqY9tc",
@@ -3729,7 +3828,8 @@
   "thumbnail": "https://i.ytimg.com/vi/DAcUVFqY9tc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-08"
  },
  {
   "videoId": "u9Bt7m2l8f8",
@@ -3741,7 +3841,8 @@
   "thumbnail": "https://i.ytimg.com/vi/u9Bt7m2l8f8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-03"
  },
  {
   "videoId": "8iLsCWtTGuE",
@@ -3753,7 +3854,8 @@
   "thumbnail": "https://i.ytimg.com/vi/8iLsCWtTGuE/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-04"
  },
  {
   "videoId": "YZffGqI6wXk",
@@ -3765,7 +3867,8 @@
   "thumbnail": "https://i.ytimg.com/vi/YZffGqI6wXk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-05"
  },
  {
   "videoId": "sTHsRSnK8UQ",
@@ -3777,7 +3880,8 @@
   "thumbnail": "https://i.ytimg.com/vi/sTHsRSnK8UQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-06"
  },
  {
   "videoId": "X2D-0QqKgKs",
@@ -3789,7 +3893,8 @@
   "thumbnail": "https://i.ytimg.com/vi/X2D-0QqKgKs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-07"
  },
  {
   "videoId": "HnyQR2_5NDQ",
@@ -3801,7 +3906,8 @@
   "thumbnail": "https://i.ytimg.com/vi/HnyQR2_5NDQ/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-06"
  },
  {
   "videoId": "Ar-9k6KTKjM",
@@ -3813,7 +3919,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Ar-9k6KTKjM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-02"
  },
  {
   "videoId": "iakLiPJbB3Y",
@@ -3825,7 +3932,8 @@
   "thumbnail": "https://i.ytimg.com/vi/iakLiPJbB3Y/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-06"
  },
  {
   "videoId": "EN-Hi7AedHY",
@@ -3837,7 +3945,8 @@
   "thumbnail": "https://i.ytimg.com/vi/EN-Hi7AedHY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-04"
  },
  {
   "videoId": "oBHsecRWg5M",
@@ -3849,7 +3958,8 @@
   "thumbnail": "https://i.ytimg.com/vi/oBHsecRWg5M/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-03"
  },
  {
   "videoId": "dKTY_T6Zwvc",
@@ -3861,7 +3971,8 @@
   "thumbnail": "https://i.ytimg.com/vi/dKTY_T6Zwvc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-04"
  },
  {
   "videoId": "GdG7QSwKW9Q",
@@ -3873,7 +3984,8 @@
   "thumbnail": "https://i.ytimg.com/vi/GdG7QSwKW9Q/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-25"
  },
  {
   "videoId": "2Q5TPihlTH8",
@@ -3885,7 +3997,8 @@
   "thumbnail": "https://i.ytimg.com/vi/2Q5TPihlTH8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-03"
  },
  {
   "videoId": "Fba3gdncjoA",
@@ -3897,7 +4010,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Fba3gdncjoA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2023-06-10"
  },
  {
   "videoId": "4ArNaWdh1og",
@@ -3909,7 +4023,8 @@
   "thumbnail": "https://i.ytimg.com/vi/4ArNaWdh1og/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-12-21"
  },
  {
   "videoId": "AYNgeUpGzms",
@@ -3921,7 +4036,8 @@
   "thumbnail": "https://i.ytimg.com/vi/AYNgeUpGzms/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-26"
  },
  {
   "videoId": "ZevpKEuopxU",
@@ -3933,7 +4049,8 @@
   "thumbnail": "https://i.ytimg.com/vi/ZevpKEuopxU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-19"
  },
  {
   "videoId": "JI5bYlud-18",
@@ -3945,7 +4062,8 @@
   "thumbnail": "https://i.ytimg.com/vi/JI5bYlud-18/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-01-31"
  },
  {
   "videoId": "PI4n33JHk80",
@@ -3957,7 +4075,8 @@
   "thumbnail": "https://i.ytimg.com/vi/PI4n33JHk80/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-01"
  },
  {
   "videoId": "hT1Vg1NK6Rk",
@@ -3969,7 +4088,8 @@
   "thumbnail": "https://i.ytimg.com/vi/hT1Vg1NK6Rk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-02"
  },
  {
   "videoId": "oAqbM8OOtLI",
@@ -3981,7 +4101,8 @@
   "thumbnail": "https://i.ytimg.com/vi/oAqbM8OOtLI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-03"
  },
  {
   "videoId": "evXmdVSR2kg",
@@ -3993,7 +4114,8 @@
   "thumbnail": "https://i.ytimg.com/vi/evXmdVSR2kg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-07-01"
  },
  {
   "videoId": "GHU0DwGOUxc",
@@ -4005,7 +4127,8 @@
   "thumbnail": "https://i.ytimg.com/vi/GHU0DwGOUxc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-04"
  },
  {
   "videoId": "l9w8Efpi4KA",
@@ -4017,7 +4140,8 @@
   "thumbnail": "https://i.ytimg.com/vi/l9w8Efpi4KA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-12"
  },
  {
   "videoId": "553db3R64qY",
@@ -4029,7 +4153,8 @@
   "thumbnail": "https://i.ytimg.com/vi/553db3R64qY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-02"
  },
  {
   "videoId": "Lkw6KexUKDA",
@@ -4041,7 +4166,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Lkw6KexUKDA/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-04-25"
  },
  {
   "videoId": "Y_MlsAolka8",
@@ -4053,7 +4179,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Y_MlsAolka8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-30"
  },
  {
   "videoId": "n9k1OWnoi4k",
