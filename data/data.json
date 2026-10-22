@@ -3337,9 +3337,13 @@
   "url": "https://www.youtube.com/watch?v=AL9d1FGk3PM",
   "wl_index": 190,
   "thumbnail": "https://i.ytimg.com/vi/AL9d1FGk3PM/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Jack's Prompt and AIが、Google Flowの「ストーリーボード・スタジオ」を使い、映画のようなAI動画を無料で一から作る方法を紹介する動画です。Googleが毎日無料で提供する50クレジットを使い、Geminiの透かしを無料で消す方法も含めて、手順を順に説明しています。",
+  "points": [
+   "Google Flowのストーリーボード・スタジオ",
+   "毎日50クレジットが無料",
+   "Geminiの透かしを消す方法も解説"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-24"
  },
  {
@@ -3350,9 +3354,13 @@
   "url": "https://www.youtube.com/watch?v=BNHrLHl1DKQ",
   "wl_index": 191,
   "thumbnail": "https://i.ytimg.com/vi/BNHrLHl1DKQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "野高弘さんによるバイブコーディング超入門講座の第5回で、初心者向けにGitとGitHubを解説する動画です。難関とされるGitも、Claude Codeを使えば怖くないとし、バイブコーディングに必要な5つの操作と、セーブポイントを作る考え方を図で説明しています。",
+  "points": [
+   "Git・GitHubは初心者には難関",
+   "まず覚えるべき5つの操作",
+   "コミットをセーブポイントとして使う"
+  ],
+  "captions": "ok",
   "upload_date": "2026-06-05"
  },
  {
@@ -3363,9 +3371,13 @@
   "url": "https://www.youtube.com/watch?v=vj-eVysAUQw",
   "wl_index": 192,
   "thumbnail": "https://i.ytimg.com/vi/vj-eVysAUQw/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "AIと外注を使えば8時間睡眠でも十分に稼げるとして、長時間労働をよしとする働き方を見直すよう呼びかける対談動画です。根性で働く時代は終わったとし、マネジメント力を高めて夜はほとんど仕事をしないことや、SNSを向こうから人が会いに来てくれる仕組みとして使う考え方を語っています。",
+  "points": [
+   "今の働き方はAIを知らなさすぎる",
+   "根性で働く時代は終わった",
+   "SNSは人を呼び込む装置"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-24"
  },
  {
@@ -3376,9 +3388,13 @@
   "url": "https://www.youtube.com/watch?v=EFM_KzeyBwE",
   "wl_index": 193,
   "thumbnail": "https://i.ytimg.com/vi/EFM_KzeyBwE/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Anthropicの公式ブログで紹介された、Claude Codeが自分で検証して修正する「検証ループ」について、図を交えて解説する動画です。まだ取り入れていない人にも試してほしい内容として、王道の6パターンと考え方を紹介しています。",
+  "points": [
+   "出典はAnthropic公式ブログ",
+   "Claudeが自分で検証して直す仕組み",
+   "王道の6パターン"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-23"
  },
  {
@@ -3389,9 +3405,13 @@
   "url": "https://www.youtube.com/watch?v=UN2RmZ0NUQs",
   "wl_index": 194,
   "thumbnail": "https://i.ytimg.com/vi/UN2RmZ0NUQs/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Claudeの回答をそのまま仕事に使える質にするための「裏プロンプト」7つを、コピペできる形で紹介する動画です。売上データの分析を例に、頼み方を仕事に合わせて作り直すと、数字やグラフだけでなく、主力商品への売上集中のリスクと次の一手まで提案されるようになると示しています。",
+  "points": [
+   "回答が物足りないのはAIのせいではない",
+   "頼み方を仕事に合わせて作り直す",
+   "分析結果から次の一手まで引き出す"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-25"
  },
  {
@@ -3402,9 +3422,13 @@
   "url": "https://www.youtube.com/watch?v=aGthNVjhgY0",
   "wl_index": 195,
   "thumbnail": "https://i.ytimg.com/vi/aGthNVjhgY0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "PIVOT LIFEで、人生を豊かにする絵画鑑賞の技術を学ぶ動画です。人の目は明暗の差が大きい部分に向かうため、白黒にすると画家が見せたい部分がわかると説明しています。視線を導くリーディングラインや、プロとアマチュアの視線の違いも紹介しています。",
+  "points": [
+   "明暗の対比が強い部分に目が向く",
+   "リーディングラインが視線を導く",
+   "ビジネスパーソンの受講者も多い"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-21"
  },
  {
@@ -3415,9 +3439,13 @@
   "url": "https://www.youtube.com/watch?v=Em-0BLwbqnc",
   "wl_index": 196,
   "thumbnail": "https://i.ytimg.com/vi/Em-0BLwbqnc/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Webデザインとサイト制作を扱うヒロさんが、期間限定で無料公開中のFish AudioのAPIを使い、自分専用のAIニュースキャスターを作る動画です。Hacker Newsなど海外のテックニュースや天気を日本語にまとめ、実在しないキャスターが毎朝読み上げる番組をAIで自動生成しています。",
+  "points": [
+   "Fish AudioのAPIが期間限定で無料",
+   "海外テックニュースと天気を日本語で読み上げ",
+   "サイトへの音声付けにも応用できる"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-23"
  },
  {
@@ -3428,9 +3456,13 @@
   "url": "https://www.youtube.com/watch?v=EMmKmDBpUxw",
   "wl_index": 197,
   "thumbnail": "https://i.ytimg.com/vi/EMmKmDBpUxw/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ここさんによる北海道一周の車中泊旅シリーズの第1回です。前年11月14日に就航した新しいフェリーで北海道へ向かい、ピカピカの船内を探検して、予約制のフルコースが食べられるレストランや海の見えるフリースペースを紹介しています。",
+  "points": [
+   "北海道一周の車中泊旅・第1回",
+   "前年11月14日就航の新造フェリー",
+   "予約制レストランやフリースペースを紹介"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-21"
  },
  {
@@ -3441,9 +3473,13 @@
   "url": "https://www.youtube.com/watch?v=fBCEwR9rh5o",
   "wl_index": 198,
   "thumbnail": "https://i.ytimg.com/vi/fBCEwR9rh5o/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "AI情報をどうやって追っているのかという質問に、リオさんが、意図的なキャッチアップは全くしていないと答える動画です。必死に最新情報を追うという前提自体が間違っているとして、AIを含む情報との付き合い方と、楽で自然に情報が入ってくる考え方を説明しています。",
+  "points": [
+   "AIニュースを必死に追ったことはない",
+   "情報の追い方の前提が間違っている",
+   "楽で自然なキャッチアップを提案"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-22"
  },
  {
@@ -3454,9 +3490,13 @@
   "url": "https://www.youtube.com/watch?v=uhSJi4GarpU",
   "wl_index": 199,
   "thumbnail": "https://i.ytimg.com/vi/uhSJi4GarpU/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "AIを使っても動画編集が楽にならないのは、プロンプトが下手だからではなく、AIに渡す作業と自分で確認する作業の境界線が決まっていないからだと解説する動画です。7月から実践する制作ラインを見せながら仕事の分け方を説明し、動画1本の制作期間が2日から1日に縮んだと話しています。",
+  "points": [
+   "問題はプロンプトより作業の切り分け",
+   "最初は手直しが増えて逆に遅くなった",
+   "制作期間が2日から1日に"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-19"
  },
  {
@@ -3467,9 +3507,13 @@
   "url": "https://www.youtube.com/watch?v=J1hOm-xYKdU",
   "wl_index": 200,
   "thumbnail": "https://i.ytimg.com/vi/J1hOm-xYKdU/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "トダサトルさんが、メモリー32GBのミニPC「Minisforum NAB9S」をレビューする動画です。極端に安いモデルではないものの、メーカーが工夫して価格を抑えた構成でコスパが高いと評価しています。ボタンを押すだけの仕組みがあるおなじみのボディを、ミニPCの中でも傑作だと述べています。",
+  "points": [
+   "メモリー32GB",
+   "工夫した構成で価格を抑えた",
+   "ボディはミニPCの中でも傑作と評価"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-19"
  },
  {
@@ -3480,9 +3524,13 @@
   "url": "https://www.youtube.com/watch?v=YHaVog3xsXY",
   "wl_index": 201,
   "thumbnail": "https://i.ytimg.com/vi/YHaVog3xsXY/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "国の案件があるため仮面姿で出演する仙人さんが、Claudeの新モデル「Fable」を使いこなすAIプレイヤーが稼ぐためにAIに何をやらせているかを明かす動画です。FableはMythosのセキュリティを強化したモデルで、生物学などの話題になるとOpus 4.8にダウングレードされるといった特徴も説明しています。",
+  "points": [
+   "Fableは最上位モデルMythosの安全強化版",
+   "話題によってはOpus 4.8に切り替わる",
+   "稼ぐ人がAIに任せている作業を紹介"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-21"
  },
  {
@@ -3493,9 +3541,13 @@
   "url": "https://www.youtube.com/watch?v=cP4h5ZUCHr4",
   "wl_index": 202,
   "thumbnail": "https://i.ytimg.com/vi/cP4h5ZUCHr4/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "リベ大の公式切り抜きで、主婦でも会社員でもAIで稼げるチャンスが広がっていると語る動画です。企業へのClaude CodeなどのAI導入支援は需要が高く、例えば時給2000円の社員10人の作業がAIで1日1時間短くなれば、1日2万円が浮くと試算しています。",
+  "points": [
+   "企業へのAI導入支援は需要が高い",
+   "社員10人×1時間短縮で1日2万円",
+   "AIを覚えるだけで稼ぐチャンス"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-18"
  },
  {
@@ -3506,9 +3558,13 @@
   "url": "https://www.youtube.com/watch?v=2cNq4Ynm9_o",
   "wl_index": 203,
   "thumbnail": "https://i.ytimg.com/vi/2cNq4Ynm9_o/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "AGENTチャンネルのカメラさんが、Codexの新モデルGPT-5.6を使ったループエンジニアリングで、AI社員3人にnote記事を自動生成させる仕組みを解説する動画です。モデルの使い分けがしやすくなったことで誰でも始めやすくなり、生成AI経由の流入が予測の約4倍になったと報告しています。",
+  "points": [
+   "CodexのGPT-5.6でnoteを自動化",
+   "AI社員3人のループ運用",
+   "生成AI経由の流入が予測の約4倍"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-16"
  },
  {
@@ -3519,9 +3575,13 @@
   "url": "https://www.youtube.com/watch?v=iYkbzFGPUis",
   "wl_index": 204,
   "thumbnail": "https://i.ytimg.com/vi/iYkbzFGPUis/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "世界遺産に登録された山口県萩市で1泊2日を過ごす旅の動画です。駅でレンタサイクルを借りて松下村塾や松陰神社を訪れ、高杉晋作の決断力に学びたいと語ります。敵を惑わせる行き止まりのような道など城下町の名残を巡り、日本海のグルメも楽しんでいます。",
+  "points": [
+   "駅でレンタサイクルを借りて観光",
+   "松下村塾と松陰神社",
+   "城下町の名残と日本海グルメ"
+  ],
+  "captions": "ok",
   "upload_date": "2025-05-10"
  },
  {
@@ -3532,9 +3592,13 @@
   "url": "https://www.youtube.com/watch?v=YYUBwNDXG_w",
   "wl_index": 205,
   "thumbnail": "https://i.ytimg.com/vi/YYUBwNDXG_w/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Anthropicの公式ブログをもとに、Claude Codeでモデルとエフォートレベルをどう使い分けるべきかを解説する動画です。基本は最上位モデルを高いエフォートで使えば問題ないものの、大量の処理をさばくときはエフォートをローやミディアムなど適切なレベルに下げ、速く解決する考え方を紹介しています。",
+  "points": [
+   "出典はAnthropic公式ブログ",
+   "基本は上位モデル＋高エフォート",
+   "大量処理ではエフォートを下げて高速化"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-14"
  },
  {
@@ -3545,9 +3609,13 @@
   "url": "https://www.youtube.com/watch?v=fX0E2O1QmLs",
   "wl_index": 206,
   "thumbnail": "https://i.ytimg.com/vi/fX0E2O1QmLs/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "本要約チャンネルのたけさんが、田大輔さんの著書『継続する技術』を要約する動画です。筋トレを1日サボると69.1%、2日続けてサボると83.8%の人が二度とやらなくなるといったデータや、3日坊主になる割合が自宅で41.8%、ジムで65.9%という違いを紹介しています。",
+  "points": [
+   "1日サボると69.1%がやめる",
+   "2日連続だと83.8%がやめる",
+   "3日坊主は自宅41.8%、ジム65.9%"
+  ],
+  "captions": "ok",
   "upload_date": "2026-05-14"
  },
  {
@@ -3558,9 +3626,13 @@
   "url": "https://www.youtube.com/watch?v=JOkR5k31OqA",
   "wl_index": 207,
   "thumbnail": "https://i.ytimg.com/vi/JOkR5k31OqA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Instagramで半年以内にフォロワー1万人と収益化を達成した6つのアカウントを、投稿者の許可を得て実例として解説する動画です。30投稿でフォロワー1万人、半年で月100万円を稼いで独立、会社員から最大月850万円といった事例のジャンルや数字、収益化の流れを紹介しています。",
+  "points": [
+   "30投稿でフォロワー1万人の例",
+   "半年で月100万円を稼いで独立した例",
+   "会社員から最大月850万円の例"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-13"
  },
  {
@@ -3571,9 +3643,13 @@
   "url": "https://www.youtube.com/watch?v=hvLkUeL4sAA",
   "wl_index": 208,
   "thumbnail": "https://i.ytimg.com/vi/hvLkUeL4sAA/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "副業の検証を発信するシズマさんが、2026年5月の初投稿から40日間でYouTube登録者1000人を突破した経緯をデータとともに公開する動画です。最初のチャンネルは1か月で削除したことや、収益化停止の波の中で戦略的に始めた運営の考え方を、ストーリー形式で振り返っています。",
+  "points": [
+   "40日で登録者1000人を突破",
+   "最初のチャンネルは1か月で削除",
+   "データ公開とストーリー形式の振り返り"
+  ],
+  "captions": "ok",
   "upload_date": "2026-06-22"
  },
  {
@@ -3584,9 +3660,13 @@
   "url": "https://www.youtube.com/watch?v=M-bn16DUlKY",
   "wl_index": 209,
   "thumbnail": "https://i.ytimg.com/vi/M-bn16DUlKY/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "チームみらい党首の安野貴博さんがAIについて語る対談動画です。アプリを全く知らない人でもAIに作らせられるバイブコーディングが日常になりつつあり、AIが人間の代わりにパソコンを操作する時代も来ると話しています。さらに、AIが世界を乗っ取るより、人間がAIで他国を支配しようとすることを警戒すべきだと述べています。",
+  "points": [
+   "バイブコーディングが日常に",
+   "AIがパソコンを代わりに操作する時代",
+   "警戒すべきはAIを悪用する人間"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-04"
  },
  {
@@ -3597,9 +3677,13 @@
   "url": "https://www.youtube.com/watch?v=MCRCyh2PmHQ",
   "wl_index": 210,
   "thumbnail": "https://i.ytimg.com/vi/MCRCyh2PmHQ/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "元ゴールドマン・サックスの田中渓さんと経済評論家の勝間和代さんが、AI時代の資産運用や投資術、AIでお金を増やせるかを語る対談動画です。AIを使ったスモールビジネスや情報発信の可能性に触れ、AIを使いこなすには言語化能力が重要なので日記を書くべきだと話しています。",
+  "points": [
+   "AIでスモールビジネスや発信を",
+   "自分の経験をコンテンツにする",
+   "言語化能力を鍛えるために日記を書く"
+  ],
+  "captions": "ok",
   "upload_date": "2026-01-09"
  },
  {
@@ -3610,9 +3694,13 @@
   "url": "https://www.youtube.com/watch?v=GQyf26j00xk",
   "wl_index": 211,
   "thumbnail": "https://i.ytimg.com/vi/GQyf26j00xk/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "OpenAIのCodexに加わった、繰り返し作業を画面録画で見せるだけで手順を覚え、後から呼び出すと自動で実行してくれる新機能を紹介する動画です。数字を拾って表に転記し合計する、普段なら数十分かかる毎週の広告レポートが、一言頼むだけで完成する様子を見せています。",
+  "points": [
+   "画面録画で作業の型を覚えさせる",
+   "呼び出すだけで同じ作業を自動実行",
+   "毎週の広告レポートが一言で完成"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-12"
  },
  {
@@ -3623,9 +3711,13 @@
   "url": "https://www.youtube.com/watch?v=UtCSYXl5nh8",
   "wl_index": 212,
   "thumbnail": "https://i.ytimg.com/vi/UtCSYXl5nh8/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Fableがサブスクリプションで使えなくなった後、どのAIサービスに課金すべきかを解説する動画です。エンジニアではない知人からもよく聞かれる質問に答え、現時点の選択肢は実質Codex、Claude、Cursorの3つだとして、それぞれの良さや、条件ごとのおすすめを説明しています。",
+  "points": [
+   "Fableがサブスク対象外になった後の選択",
+   "実質3択はCodex・Claude・Cursor",
+   "条件別のおすすめを紹介"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-12"
  },
  {
@@ -3636,9 +3728,13 @@
   "url": "https://www.youtube.com/watch?v=EWca-zbrbP8",
   "wl_index": 213,
   "thumbnail": "https://i.ytimg.com/vi/EWca-zbrbP8/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "今年3月までAIの素人だった小田さんが、Claude Codeで作ったスキルを販売し、4〜7月の約3か月半で1200万円を売り上げた経緯を語る動画です。3月中旬に参加したAI講座でClaude Codeとスキルの作り方を知ったのがきっかけで、今は企業のAI活用の顧問もしていると話しています。",
+  "points": [
+   "3月まではAIの素人",
+   "Claude Codeのスキル販売で1200万円",
+   "AI講座で知ったことがきっかけ"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-09"
  },
  {
@@ -3649,9 +3745,13 @@
   "url": "https://www.youtube.com/watch?v=wORf4vg94V0",
   "wl_index": 214,
   "thumbnail": "https://i.ytimg.com/vi/wORf4vg94V0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "自作のスライド作成ツールを使いたいという声を受けて、一般公開に向けて開発を始めた様子を共有する動画です。Claude Fable 5で既存ツールから公開用の仕様書を作り、Fable 5とSonnetでゼロから作り直しています。PowerPointへの出力などに対応し、APIの費用は利用者が負担する前提です。",
+  "points": [
+   "コメントでの要望を受けて公開を決定",
+   "Fable 5で仕様書、Sonnetも使って構築",
+   "APIの費用は利用者負担"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-12"
  },
  {
@@ -3662,9 +3762,13 @@
   "url": "https://www.youtube.com/watch?v=IM3FFMul1-w",
   "wl_index": 215,
   "thumbnail": "https://i.ytimg.com/vi/IM3FFMul1-w/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "普段使っているClaudeで、月10万円を稼ぐ仕組みを90日で作る手順を紹介する動画です。多くの人は稼ぎ方より手前の段階でつまずいているとし、何を売ればいいかわからない、自分に売れるものはないと思い込む、フォロワー集めで疲れるという3つの壁を先に解消するよう勧めています。",
+  "points": [
+   "90日で月10万円の仕組みを作る",
+   "つまずくのは「何を売るか」の手前",
+   "フォロワー集めから始めて疲れる人が多い"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-10"
  },
  {
@@ -3675,9 +3779,13 @@
   "url": "https://www.youtube.com/watch?v=mU0HWYEE8As",
   "wl_index": 216,
   "thumbnail": "https://i.ytimg.com/vi/mU0HWYEE8As/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Google Antigravityを使い、雑用を担当するAIエージェントで業務を効率化する方法を実演する動画です。VPS上で常に動くシステムが、Discordで送ったメッセージを受け取ってNotionにタスクを登録する仕組みなどを紹介し、1時間かかっていた業務が5分になったとしています。",
+  "points": [
+   "Google AntigravityをVPSで常時稼働",
+   "Discordで送るとNotionにタスク登録",
+   "1時間の業務が5分に"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-11"
  },
  {
@@ -3688,9 +3796,13 @@
   "url": "https://www.youtube.com/watch?v=WAwdllCqEcY",
   "wl_index": 217,
   "thumbnail": "https://i.ytimg.com/vi/WAwdllCqEcY/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "発売から1か月余りメインで使っているGalaxy S26を、快適に使うための初期設定15個を紹介する動画です。AIが進化した優れた端末である一方、初期設定のままでは一部の処理が重くもたつきを感じるとし、それを解消する設定やGood Lockの活用法を解説しています。",
+  "points": [
+   "Galaxy S26の初期設定15選",
+   "初期設定のままだと動作がもたつく",
+   "Good Lockの活用"
+  ],
+  "captions": "ok",
   "upload_date": "2026-04-17"
  },
  {
@@ -3701,9 +3813,13 @@
   "url": "https://www.youtube.com/watch?v=NAXnUNauyO8",
   "wl_index": 218,
   "thumbnail": "https://i.ytimg.com/vi/NAXnUNauyO8/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ChatGPT、Claude、Gemini、GrokなどのAIだけに村を運営させ、どのAIに世界を任せるのが最もよいかを比べた実験を紹介する動画です。AIごとに結果がばらばらで、恋愛や犯罪をするAI、監視されていることに気づくAI、自分自身に投票するAIまで現れたと伝えています。",
+  "points": [
+   "複数のAIに村を作らせる実験",
+   "恋愛や犯罪をするAIも登場",
+   "監視に気づくAI・自分に投票するAIも"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-10"
  },
  {
@@ -3714,9 +3830,13 @@
   "url": "https://www.youtube.com/watch?v=or61N2T9TqI",
   "wl_index": 219,
   "thumbnail": "https://i.ytimg.com/vi/or61N2T9TqI/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "テック戦のズ田中さんが、Claude Fable 5の公式ガイドをもとにプロンプト設計の考え方を解説する動画です。Fableが一度は米国政府に止められたことに触れ、撮影時点の7月7日までに使い込むよう勧めたうえで、開発でプロンプトがいかに大事かを話しています。",
+  "points": [
+   "Fable 5の公式ガイドが題材",
+   "一度は米国政府に止められた",
+   "開発ではプロンプトが重要"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-11"
  },
  {
@@ -3727,9 +3847,13 @@
   "url": "https://www.youtube.com/watch?v=7jSPm0lwsV0",
   "wl_index": 220,
   "thumbnail": "https://i.ytimg.com/vi/7jSPm0lwsV0/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Claude Codeチャンネルの川村さんが、Claude Codeとループエンジニアリングで、高品質なスライドを一度に作る方法を解説する動画です。1〜2時間のセミナー資料を作るのに半日かかっていたところ、140枚のスライドを一度に作れた例を紹介し、日々の作業が30分から1時間短くなるとしています。",
+  "points": [
+   "Claude Code×ループエンジニアリング",
+   "140枚のスライドを一度に作成",
+   "スライド作りが30分〜1時間短縮"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-09"
  },
  {
@@ -3740,9 +3864,13 @@
   "url": "https://www.youtube.com/watch?v=XykZRQjNH40",
   "wl_index": 221,
   "thumbnail": "https://i.ytimg.com/vi/XykZRQjNH40/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "Geminiの特定用途向けにカスタマイズできる「Gem」機能を使い、毎日の作業を自動化する活用法5つを解説する動画です。ChatGPTのGPTsより高機能だとし、毎回プロンプトを書かなくても、資料作成、スプレッドシートの整形、グラフの提案などを同じ精度で処理させられると紹介しています。",
+  "points": [
+   "Gemは用途別にカスタマイズできる機能",
+   "ChatGPTのGPTsより高機能と評価",
+   "毎回同じ精度で作業を処理"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-10"
  },
  {
@@ -3753,9 +3881,13 @@
   "url": "https://www.youtube.com/watch?v=Qw6sOGhRg8U",
   "wl_index": 222,
   "thumbnail": "https://i.ytimg.com/vi/Qw6sOGhRg8U/mqdefault.jpg",
-  "summary_ja": "",
-  "points": [],
-  "captions": "unknown",
+  "summary_ja": "ケトさんが、新しく追加されたGPT-5.6の解説と検証結果を紹介する動画です。同時にChatGPTの画面が大きく変わり、ChatGPT WorkとChatGPT Codexが加わって、従来のChatGPTはChatGPT Classicという別アプリになったとして、それぞれの違いや使い方を説明しています。",
+  "points": [
+   "GPT-5.6の解説と検証",
+   "ChatGPT WorkとCodexが追加",
+   "旧ChatGPTはClassicアプリに"
+  ],
+  "captions": "ok",
   "upload_date": "2026-07-11"
  },
  {
@@ -4795,7 +4927,8 @@
   "thumbnail": "https://i.ytimg.com/vi/zEOXv2Idl6U/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-17"
  },
  {
   "videoId": "lVeWukyWFmk",
@@ -4807,7 +4940,8 @@
   "thumbnail": "https://i.ytimg.com/vi/lVeWukyWFmk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-20"
  },
  {
   "videoId": "B8FtUPqgA0E",
@@ -4819,7 +4953,8 @@
   "thumbnail": "https://i.ytimg.com/vi/B8FtUPqgA0E/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-03-06"
  },
  {
   "videoId": "UnjfHQ60zBg",
@@ -4831,7 +4966,8 @@
   "thumbnail": "https://i.ytimg.com/vi/UnjfHQ60zBg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-19"
  },
  {
   "videoId": "Xx8hH7iDsSo",
@@ -4843,7 +4979,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Xx8hH7iDsSo/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-09-08"
  },
  {
   "videoId": "OsnSkanv2m4",
@@ -4855,7 +4992,8 @@
   "thumbnail": "https://i.ytimg.com/vi/OsnSkanv2m4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-13"
  },
  {
   "videoId": "vI-dAQsjtlE",
@@ -4867,7 +5005,8 @@
   "thumbnail": "https://i.ytimg.com/vi/vI-dAQsjtlE/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-03-08"
  },
  {
   "videoId": "FFaYklH8J7Y",
@@ -4879,7 +5018,8 @@
   "thumbnail": "https://i.ytimg.com/vi/FFaYklH8J7Y/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-02-24"
  },
  {
   "videoId": "d-JEvCr3y7w",
@@ -4891,7 +5031,8 @@
   "thumbnail": "https://i.ytimg.com/vi/d-JEvCr3y7w/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-14"
  },
  {
   "videoId": "8KHwvK3Xheo",
@@ -4903,7 +5044,8 @@
   "thumbnail": "https://i.ytimg.com/vi/8KHwvK3Xheo/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-13"
  },
  {
   "videoId": "fscjz9KgINw",
@@ -4915,7 +5057,8 @@
   "thumbnail": "https://i.ytimg.com/vi/fscjz9KgINw/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-08"
  },
  {
   "videoId": "aBQLzMHOl88",
@@ -4927,7 +5070,8 @@
   "thumbnail": "https://i.ytimg.com/vi/aBQLzMHOl88/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-17"
  },
  {
   "videoId": "mkdqs94FoUk",
@@ -4939,7 +5083,8 @@
   "thumbnail": "https://i.ytimg.com/vi/mkdqs94FoUk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-02-10"
  },
  {
   "videoId": "_RbXxlgea10",
@@ -4951,7 +5096,8 @@
   "thumbnail": "https://i.ytimg.com/vi/_RbXxlgea10/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-29"
  },
  {
   "videoId": "fABLNL0DyvY",
@@ -4963,7 +5109,8 @@
   "thumbnail": "https://i.ytimg.com/vi/fABLNL0DyvY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-13"
  },
  {
   "videoId": "ct5RIWHrqLU",
@@ -4975,7 +5122,8 @@
   "thumbnail": "https://i.ytimg.com/vi/ct5RIWHrqLU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-12"
  },
  {
   "videoId": "w8TRpmOEpMk",
@@ -4987,7 +5135,8 @@
   "thumbnail": "https://i.ytimg.com/vi/w8TRpmOEpMk/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-25"
  },
  {
   "videoId": "LLfhVN2dhDg",
@@ -4999,7 +5148,8 @@
   "thumbnail": "https://i.ytimg.com/vi/LLfhVN2dhDg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-15"
  },
  {
   "videoId": "WF1JfS2q8Og",
@@ -5011,7 +5161,8 @@
   "thumbnail": "https://i.ytimg.com/vi/WF1JfS2q8Og/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-13"
  },
  {
   "videoId": "Iw8P-pcFTHs",
@@ -5023,7 +5174,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Iw8P-pcFTHs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-01-18"
  },
  {
   "videoId": "4VDUBb3El3A",
@@ -5035,7 +5187,8 @@
   "thumbnail": "https://i.ytimg.com/vi/4VDUBb3El3A/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-14"
  },
  {
   "videoId": "uOcdM94NrP4",
@@ -5047,7 +5200,8 @@
   "thumbnail": "https://i.ytimg.com/vi/uOcdM94NrP4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-15"
  },
  {
   "videoId": "8f0GDUm_cbI",
@@ -5059,7 +5213,8 @@
   "thumbnail": "https://i.ytimg.com/vi/8f0GDUm_cbI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-13"
  },
  {
   "videoId": "eUxqnEfnygE",
@@ -5071,7 +5226,8 @@
   "thumbnail": "https://i.ytimg.com/vi/eUxqnEfnygE/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "GBjWtaZ4MY4",
@@ -5083,7 +5239,8 @@
   "thumbnail": "https://i.ytimg.com/vi/GBjWtaZ4MY4/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-07"
  },
  {
   "videoId": "EXB4FOL-2Fc",
@@ -5095,7 +5252,8 @@
   "thumbnail": "https://i.ytimg.com/vi/EXB4FOL-2Fc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-10"
  },
  {
   "videoId": "IAiIPY1nD2c",
@@ -5107,7 +5265,8 @@
   "thumbnail": "https://i.ytimg.com/vi/IAiIPY1nD2c/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-02"
  },
  {
   "videoId": "4aCPKKEeQzc",
@@ -5119,7 +5278,8 @@
   "thumbnail": "https://i.ytimg.com/vi/4aCPKKEeQzc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-04"
  },
  {
   "videoId": "VNxrMwAl6-k",
@@ -5131,7 +5291,8 @@
   "thumbnail": "https://i.ytimg.com/vi/VNxrMwAl6-k/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-03-09"
  },
  {
   "videoId": "eoFbWpDdx_I",
@@ -5143,7 +5304,8 @@
   "thumbnail": "https://i.ytimg.com/vi/eoFbWpDdx_I/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-06"
  },
  {
   "videoId": "-Eg0DI3lmo8",
@@ -5155,7 +5317,8 @@
   "thumbnail": "https://i.ytimg.com/vi/-Eg0DI3lmo8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-11"
  },
  {
   "videoId": "yVy7NFeig3A",
@@ -5167,7 +5330,8 @@
   "thumbnail": "https://i.ytimg.com/vi/yVy7NFeig3A/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-02"
  },
  {
   "videoId": "DZdGnfnygHo",
@@ -5179,7 +5343,8 @@
   "thumbnail": "https://i.ytimg.com/vi/DZdGnfnygHo/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2025-12-10"
  },
  {
   "videoId": "CmFLMhFKL38",
@@ -5191,7 +5356,8 @@
   "thumbnail": "https://i.ytimg.com/vi/CmFLMhFKL38/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-02-11"
  },
  {
   "videoId": "vPHTtLlke9c",
@@ -5203,7 +5369,8 @@
   "thumbnail": "https://i.ytimg.com/vi/vPHTtLlke9c/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-01-13"
  },
  {
   "videoId": "w2wShvBG9jI",
@@ -5215,7 +5382,8 @@
   "thumbnail": "https://i.ytimg.com/vi/w2wShvBG9jI/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-02"
  },
  {
   "videoId": "Rf5K3reQWIM",
@@ -5227,7 +5395,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Rf5K3reQWIM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-07"
  },
  {
   "videoId": "VpbvVRuqAcs",
@@ -5239,7 +5408,8 @@
   "thumbnail": "https://i.ytimg.com/vi/VpbvVRuqAcs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-10"
  },
  {
   "videoId": "PAF3tas43Rs",
@@ -5251,7 +5421,8 @@
   "thumbnail": "https://i.ytimg.com/vi/PAF3tas43Rs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-05"
  },
  {
   "videoId": "wF6D_yXN6tU",
@@ -5263,7 +5434,8 @@
   "thumbnail": "https://i.ytimg.com/vi/wF6D_yXN6tU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-06"
  },
  {
   "videoId": "bogsZSiAwmY",
@@ -5275,7 +5447,8 @@
   "thumbnail": "https://i.ytimg.com/vi/bogsZSiAwmY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-05"
  },
  {
   "videoId": "Dogo6icMc58",
@@ -5287,7 +5460,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Dogo6icMc58/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-22"
  },
  {
   "videoId": "elln0YciQI8",
@@ -5299,7 +5473,8 @@
   "thumbnail": "https://i.ytimg.com/vi/elln0YciQI8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-02"
  },
  {
   "videoId": "q1-HiinCG-s",
@@ -5311,7 +5486,8 @@
   "thumbnail": "https://i.ytimg.com/vi/q1-HiinCG-s/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-02"
  },
  {
   "videoId": "mVTHgWX5mQc",
@@ -5323,7 +5499,8 @@
   "thumbnail": "https://i.ytimg.com/vi/mVTHgWX5mQc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "2JOLh8vtJS0",
@@ -5335,7 +5512,8 @@
   "thumbnail": "https://i.ytimg.com/vi/2JOLh8vtJS0/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-30"
  },
  {
   "videoId": "kN9Yw3ZWXEg",
@@ -5347,7 +5525,8 @@
   "thumbnail": "https://i.ytimg.com/vi/kN9Yw3ZWXEg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-30"
  },
  {
   "videoId": "XgKhAEO7Ulg",
@@ -5359,7 +5538,8 @@
   "thumbnail": "https://i.ytimg.com/vi/XgKhAEO7Ulg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-07"
  },
  {
   "videoId": "vZ5c_Y8qsLU",
@@ -5371,7 +5551,8 @@
   "thumbnail": "https://i.ytimg.com/vi/vZ5c_Y8qsLU/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-06-01"
  },
  {
   "videoId": "MpUuHP28enc",
@@ -5383,7 +5564,8 @@
   "thumbnail": "https://i.ytimg.com/vi/MpUuHP28enc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-25"
  },
  {
   "videoId": "68mrueBXwPc",
@@ -5395,7 +5577,8 @@
   "thumbnail": "https://i.ytimg.com/vi/68mrueBXwPc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-05"
  },
  {
   "videoId": "zLUzhFUdWYM",
@@ -5407,7 +5590,8 @@
   "thumbnail": "https://i.ytimg.com/vi/zLUzhFUdWYM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-29"
  },
  {
   "videoId": "y0OtJEZLBsY",
@@ -5419,7 +5603,8 @@
   "thumbnail": "https://i.ytimg.com/vi/y0OtJEZLBsY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-28"
  },
  {
   "videoId": "sqWwJOrIyb8",
@@ -5431,7 +5616,8 @@
   "thumbnail": "https://i.ytimg.com/vi/sqWwJOrIyb8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-04-24"
  },
  {
   "videoId": "OBmQF3qmTVM",
@@ -5443,7 +5629,8 @@
   "thumbnail": "https://i.ytimg.com/vi/OBmQF3qmTVM/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "rcgcLSbsi2g",
@@ -5455,7 +5642,8 @@
   "thumbnail": "https://i.ytimg.com/vi/rcgcLSbsi2g/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-25"
  },
  {
   "videoId": "TH6sCY1JVRc",
@@ -5467,7 +5655,8 @@
   "thumbnail": "https://i.ytimg.com/vi/TH6sCY1JVRc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "Wlq2wKMrn-I",
@@ -5479,7 +5668,8 @@
   "thumbnail": "https://i.ytimg.com/vi/Wlq2wKMrn-I/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-27"
  },
  {
   "videoId": "8Z7al9JfckE",
@@ -5491,7 +5681,8 @@
   "thumbnail": "https://i.ytimg.com/vi/8Z7al9JfckE/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-24"
  },
  {
   "videoId": "LoX9_dnXthc",
@@ -5503,7 +5694,8 @@
   "thumbnail": "https://i.ytimg.com/vi/LoX9_dnXthc/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-26"
  },
  {
   "videoId": "xhrDWXEiLbY",
@@ -5515,7 +5707,8 @@
   "thumbnail": "https://i.ytimg.com/vi/xhrDWXEiLbY/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-26"
  },
  {
   "videoId": "d0NJCT--5lg",
@@ -5527,7 +5720,8 @@
   "thumbnail": "https://i.ytimg.com/vi/d0NJCT--5lg/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-13"
  },
  {
   "videoId": "LHikWuwD-t8",
@@ -5539,7 +5733,8 @@
   "thumbnail": "https://i.ytimg.com/vi/LHikWuwD-t8/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-01-31"
  },
  {
   "videoId": "RKLj5jWwH0E",
@@ -5551,7 +5746,8 @@
   "thumbnail": "https://i.ytimg.com/vi/RKLj5jWwH0E/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2026-05-17"
  },
  {
   "videoId": "IneYYHY-xLs",
@@ -5563,7 +5759,8 @@
   "thumbnail": "https://i.ytimg.com/vi/IneYYHY-xLs/mqdefault.jpg",
   "summary_ja": "",
   "points": [],
-  "captions": "unknown"
+  "captions": "unknown",
+  "upload_date": "2021-02-21"
  },
  {
   "videoId": "IGAfB83_93c",
