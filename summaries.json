@@ -3420,5 +3420,13 @@
    "MacはLM Studio、WindowsはOllama等で実行",
    "性能はClaude 4やGPT-4.5ほどの水準に到達"
   ]
+ },
+ "IneYYHY-xLs": {
+  "summary_ja": "StreamBeatsのオリジナル曲「Kill It Anyway」のミュージックビデオで、自動生成の英語字幕に歌詞が載っています。生まれながらの炎や嘘、自分で考えること、世界を焼き尽くさせないといった歌詞が繰り返されます。",
+  "points": [
+   "StreamBeats Originalsの楽曲",
+   "自動生成の英語字幕に歌詞あり",
+   "「kill it anyway」などのフレーズ"
+  ]
  }
 }
