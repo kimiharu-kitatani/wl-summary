@@ -1404,9 +1404,8 @@
     "chars": 6122
   },
   "u9Bt7m2l8f8": {
-    "status": "ok",
-    "lang": "ja-auto",
-    "chars": 34
+    "status": "no_captions",
+    "detail": "captions contain no usable speech"
   },
   "8iLsCWtTGuE": {
     "status": "ok",
@@ -2050,8 +2049,7 @@
     "chars": 14491
   },
   "IneYYHY-xLs": {
-    "status": "ok",
-    "lang": "en-auto",
-    "chars": 501
+    "status": "no_captions",
+    "detail": "captions contain no usable speech"
   }
 }
