@@ -8,7 +8,7 @@ header{position:sticky;top:0;background:#fff;padding:10px;box-shadow:0 1px 4px #
 .ctl{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 input[type=search],select{padding:8px;font-size:15px;border:1px solid #ccc;border-radius:6px;background:#fff}input[type=search]{flex:1;min-width:160px}
 select{max-width:100%}#ch{max-width:240px}@media(max-width:600px){#ch,#sort{flex:1 1 100%;max-width:100%}}
-.gl{font-size:13px;white-space:nowrap}#cnt{font-size:12px;color:#666;margin-top:6px}
+.gl{font-size:13px;white-space:nowrap}#cnt{font-size:12px;color:#666;margin-top:6px}#lastsum{font-size:12px;color:#555;margin:4px 0 2px}
 main{padding:12px;max-width:1400px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
 h2.grp{font-size:15px;margin:18px 0 8px;padding-left:8px;border-left:4px solid #d00}h2.grp span{color:#888;font-weight:400;font-size:12px}
 .c{position:relative;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px #0002;display:flex;flex-direction:column}
@@ -28,6 +28,7 @@ details{margin-top:6px;font-size:13px;line-height:1.6}summary{cursor:pointer;col
 #bar button{padding:8px 12px;font-size:14px;border-radius:6px;border:1px solid #ccc;background:#fff;cursor:pointer}
 #del{background:#d00!important;color:#fff;border-color:#d00!important}#det{background:#06c!important;color:#fff;border-color:#06c!important}#bar button:disabled{opacity:.4;cursor:default}#note{color:#888}
 </style></head><body><header><div class="top"><h1>後で見る 要約一覧</h1><span><button id="sync" disabled title="拡張機能が必要です">🔄 今すぐ同期</button><a class="dash" href="file:///C:/Kita/webdocs/kitatani/dashboard/index.html" title="PCのローカルダッシュボード（ブラウザによっては直接開けません）">ダッシュボード</a></span></div>
+<div id="lastsum">最終要約: 不明</div>
 <div class="ctl">
 <input id="q" type="search" placeholder="タイトル・チャンネル・要約を検索">
 <select id="ch"><option value="">すべてのチャンネル</option></select>
@@ -55,10 +56,28 @@ function savePrio(){PRIO={pins:[...PINS],stars:PRI,updatedAt:new Date().toISOStr
 fetch('../data/priorities.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&(j.updatedAt||'')>(PRIO.updatedAt||'')){
  PRIO=j;PINS=new Set(j.pins||[]);PRI=j.stars||{};localStorage.setItem('wl_prio',JSON.stringify(PRIO));render()}}).catch(()=>{});
 fetch('../data/detail_requests.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).then(j=>{REQ=j||{};render()}).catch(()=>{});
-function loadData(bust){return fetch('../data/data.json'+(bust?'?t='+Date.now():''),{cache:'no-cache'}).then(r=>r.json()).then(d=>{
- const del=new Set(LS(DK,[])),ids=new Set(d.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i)||d.find(x=>x.videoId===i&&x.removed))del.delete(i)});localStorage.setItem(DK,JSON.stringify([...del]));
- D=d.map((x,i)=>({...x,wl_index:x.wl_index??i,...(del.has(x.videoId)&&!x.removed?{removed:true,removed_at:new Date().toISOString(),removed_reason:'deleted_from_viewer'}:{})}));
- const cv=$('ch').value;$('ch').length=1;[...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));$('ch').value=cv;render();return d})}
+function fmtLastSum(iso){if(!iso)return '不明';
+ try{const d=new Date(iso);if(isNaN(d))return '不明';
+  const p=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(d);
+  const g=t=>p.find(x=>x.type===t)?.value||'';
+  return `${g('year')}/${g('month')}/${g('day')} ${g('hour')}:${g('minute')}（日本時間）`;
+ }catch{return '不明'}}
+function setLastSum(iso){const el=$('lastsum');if(el)el.textContent='最終要約: '+fmtLastSum(iso)}
+let LAST_SUM=null;
+function applyData(rows,lastIso){
+ const del=new Set(LS(DK,[])),ids=new Set(rows.map(x=>x.videoId));[...del].forEach(i=>{if(!ids.has(i)||rows.find(x=>x.videoId===i&&x.removed))del.delete(i)});localStorage.setItem(DK,JSON.stringify([...del]));
+ D=rows.map((x,i)=>({...x,wl_index:x.wl_index??i,...(del.has(x.videoId)&&!x.removed?{removed:true,removed_at:new Date().toISOString(),removed_reason:'deleted_from_viewer'}:{})}));
+ if(lastIso)LAST_SUM=lastIso;setLastSum(LAST_SUM);
+ const cv=$('ch').value;$('ch').length=1;[...new Set(D.map(x=>x.channel).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja')).forEach(c=>$('ch').add(new Option(c,c)));$('ch').value=cv;render();
+}
+function loadData(bust){const q=bust?'?t='+Date.now():'';
+ return fetch('../data/data.json'+q,{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  const rows=Array.isArray(d)?d:(d&&Array.isArray(d.videos)?d.videos:[]);
+  const fromData=(!Array.isArray(d)&&d&&d.last_summarized_at)||null;
+  if(fromData){applyData(rows,fromData);return d}
+  return fetch('../data/summary_meta.json'+q,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null).then(m=>{
+   applyData(rows,(m&&m.last_summarized_at)||LAST_SUM||null);return d})
+ })}
 loadData().catch(()=>$('list').innerHTML='<p class="n">data.json を読み込めませんでした</p>');
 function card(x){const id=x.videoId,p=PRI[id]||0,pn=PINS.has(id);
  return `<div class="c${SEL.has(id)?' sel':''}${x.removed?' rm':''}${pn?' pinned':''}" data-id="${esc(id)}">
