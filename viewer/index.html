@@ -497,7 +497,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const LS=(k,d)=>{try{return JSON.parse(localStorage.getItem(k)||'null')??d}catch{return d}};
 const DK='wl_deleted',PK='wl_priority';
-let D=[],REQ={},VIS=[],EXT=false,BUSY=false;const SEL=new Set();
+let D=[],REQ={},DELREQ={},VIS=[],EXT=false,BUSY=false;const SEL=new Set();
 let PRIO=LS('wl_prio',null);
 if(!PRIO){const old=LS(PK,{});PRIO={pins:[],stars:old||{},updatedAt:''};}
 let PINS=new Set(PRIO.pins||[]),PRI=PRIO.stars||{};
@@ -505,6 +505,7 @@ function savePrio(){PRIO={pins:[...PINS],stars:PRI,updatedAt:new Date().toISOStr
  clearTimeout(savePrio.t);savePrio.t=setTimeout(()=>{if(EXT){$('note').textContent='優先度をGitHubに保存中…';window.postMessage({type:'WL_PRIORITY_SAVE',prio:PRIO},location.origin)}},2500)}
 fetch('../data/priorities.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&(j.updatedAt||'')>(PRIO.updatedAt||'')){
  PRIO=j;PINS=new Set(j.pins||[]);PRI=j.stars||{};localStorage.setItem('wl_prio',JSON.stringify(PRIO));render()}}).catch(()=>{});
+fetch('../data/delete_requests.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).then(j=>{DELREQ=j||{};render()}).catch(()=>{});
 fetch('../data/detail_requests.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).then(j=>{REQ=j||{};render()}).catch(()=>{});
 function fmtLastSum(iso){if(!iso)return '不明';
  try{const d=new Date(iso);if(isNaN(d))return '不明';
@@ -537,7 +538,7 @@ function card(x){const id=x.videoId,p=PRI[id]||0,pn=PINS.has(id);
  </div><div class="prw"><button tabindex="-1" class="pin${pn?' on':''}" data-id="${esc(id)}" aria-pressed="${pn}">${pn?'📌 固定中':'📌 上に固定'}</button><span class="prl">優先度</span>${[1,2,3].map(n=>`<button tabindex="-1" class="pri${p>=n?' on':''}" data-id="${esc(id)}" data-n="${n}" title="優先度${n}（もう一度押すと解除）" aria-label="優先度${n}">★</button>`).join('')}</div>
  ${x.summary_ja?`<div class="s">${esc(x.summary_ja)}</div>${x.points&&x.points.length?'<ul>'+x.points.map(q=>'<li>'+esc(q)+'</li>').join('')+'</ul>':''}`
  :`<div class="n">${x.captions==='no_captions'?'字幕がないため要約できません':'要約はまだありません'}</div>`}
- ${x.detail?`<details><summary tabindex="-1">詳しい要約を読む</summary><div>${esc(x.detail).replace(/\n/g,'<br>')}</div></details>`:REQ[id]?'<span class="badge">詳しい要約をリクエスト済み</span>':''}
+ ${x.detail?`<details><summary tabindex="-1">詳しい要約を読む</summary><div>${esc(x.detail).replace(/\n/g,'<br>')}</div></details>`:REQ[id]?'<span class="badge">詳しい要約をリクエスト済み</span>':''}${DELREQ[id]&&!x.removed?'<span class="badge">削除待ち</span>':''}
  </div></div>`}
 function render(){const q=$('q').value.toLowerCase(),c=$('ch').value,fv=$('f').value,so=$('sort').value;
  const av=$('arc').value;let r=D.filter(x=>(av==='all'||(av==='only'?x.removed:!x.removed))&&(!c||x.channel===c)&&(!fv||(fv==='y'&&x.summary_ja)||(fv==='n'&&!x.summary_ja)||(fv==='d'&&x.detail)||(fv==='p'&&(PRI[x.videoId]||PINS.has(x.videoId))))&&
@@ -557,14 +558,14 @@ $('cnt').textContent=`${r.length} / ${D.length-na} 件`+(na?`（削除済み ${n
  updBar()}
 function updBar(){const n=SEL.size;
   document.body.classList.toggle('has-selection', n > 0);
-  if($('bar-count')) $('bar-count').textContent = `${n}件選択中`;$('del').textContent=`選んだ${n}件を後で見るから削除`;
+  if($('bar-count')) $('bar-count').textContent = `${n}件選択中`;$('del').textContent=EXT?`選んだ${n}件を後で見るから削除`:`選んだ${n}件の削除をリクエスト`;
  $('det').textContent=EXT?`選んだ${n}件の詳しい要約を作成`:`選んだ${n}件の詳しい要約をリクエスト（GitHub）`;
- $('del').disabled=!EXT||BUSY||!n;$('det').disabled=BUSY||!n;$('cp').disabled=!n;$('all').disabled=BUSY;
+ $('del').disabled=(EXT?BUSY:false)||!n;$('det').disabled=BUSY||!n;$('cp').disabled=!n;$('all').disabled=BUSY;
  $('all').checked=VIS.length>0&&VIS.every(x=>SEL.has(x.videoId));
  const st=$('st');
  if(BUSY){st.textContent='';st.className=''}
  else if(!EXT&&CHECKING){st.textContent='拡張機能を確認中…';st.className=''}
- else if(!EXT){st.textContent='⚠ 拡張機能が見つかりません（削除はPCのChrome＋拡張機能v2.4以上が必要）';st.className='ng'}
+ else if(!EXT){st.textContent='⚠ 拡張機能が見つかりません（削除はGitHubへのリクエストになり、あとでBotが消します）';st.className='ng'}
  else if(!n){st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中 ・ 動画を選ぶとボタンが押せます`;st.className='ok'}
  else{st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中`;st.className='ok'}}
 ['q','ch','f','sort','grp','arc'].forEach(i=>$(i).addEventListener('input',render));
@@ -590,6 +591,12 @@ window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!
   if(m.ok){(m.ids||[]).forEach(id=>{REQ[id]=REQ[id]||{requestedAt:new Date().toISOString()};SEL.delete(id)});render();$('note').textContent=`詳しい要約のリクエストを ${(m.ids||[]).length} 件記録しました`}
   else{$('note').textContent='リクエストの記録に失敗: '+(m.error||'');updBar()}}});
 $('del').addEventListener('click',()=>{const rmd=new Set(D.filter(x=>x.removed).map(x=>x.videoId));const ids=[...SEL].filter(i=>!rmd.has(i));if(!ids.length){$('note').textContent='選んだ動画はすべて削除済みです';return}
+ if(!EXT){const T=new Map(D.map(x=>[x.videoId,x.title]));const lines=ids.map(i=>`${i}\t${(T.get(i)||'').replace(/[\t\n]/g,' ')}`).join('\n');
+  const NEW='https://github.com/kimiharu-kitatani/wl-summary/issues/new?title='+encodeURIComponent(`削除リクエスト（${ids.length}件）`)+'&labels=delete-request';
+  const url=NEW+'&body='+encodeURIComponent(lines);
+  if(url.length>7000){navigator.clipboard?.writeText(lines);$('note').textContent='件数が多いため一覧をコピーしました。開いたIssueの本文に貼り付けてください';window.open(NEW,'_blank','noopener')}
+  else{window.open(url,'_blank','noopener');$('note').textContent='GitHubのIssue画面を開きました。「Create」を押すと削除リクエストになります'}
+  return}
  if(!confirm(`選んだ${ids.length}件をYouTubeの「後で見る」から削除します。よろしいですか？`))return;
  BUSY=true;done=0;total=ids.length;$('note').textContent=`削除中… 0/${total}`;updBar();window.postMessage({type:'WL_DELETE',ids},ORIGIN)});
 $('det').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
