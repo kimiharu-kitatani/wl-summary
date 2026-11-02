@@ -560,12 +560,12 @@ function updBar(){const n=SEL.size;
   document.body.classList.toggle('has-selection', n > 0);
   if($('bar-count')) $('bar-count').textContent = `${n}件選択中`;$('del').textContent=EXT?`選んだ${n}件を後で見るから削除`:`選んだ${n}件の削除をリクエスト`;
  $('det').textContent=EXT?`選んだ${n}件の詳しい要約を作成`:`選んだ${n}件の詳しい要約をリクエスト（GitHub）`;
- $('del').disabled=(EXT?BUSY:false)||!n;$('det').disabled=BUSY||!n;$('cp').disabled=!n;$('all').disabled=BUSY;
+ $('del').disabled=BUSY||!n;$('det').disabled=BUSY||!n;$('cp').disabled=!n;$('all').disabled=BUSY;
  $('all').checked=VIS.length>0&&VIS.every(x=>SEL.has(x.videoId));
  const st=$('st');
  if(BUSY){st.textContent='';st.className=''}
  else if(!EXT&&CHECKING){st.textContent='拡張機能を確認中…';st.className=''}
- else if(!EXT){st.textContent='⚠ 拡張機能が見つかりません（削除はGitHubへのリクエストになり、あとでBotが消します）';st.className='ng'}
+ else if(!EXT){st.textContent='スマホから削除を依頼できます。PC／Chromeの接続待ちは画面に表示されます';st.className='ng'}
  else if(!n){st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中 ・ 動画を選ぶとボタンが押せます`;st.className='ok'}
  else{st.textContent=`✔ 拡張機能 v${EXTV||'?'} 接続中`;st.className='ok'}}
 ['q','ch','f','sort','grp','arc'].forEach(i=>$(i).addEventListener('input',render));
@@ -591,12 +591,7 @@ window.addEventListener('message',e=>{if(e.source!==window||e.origin!==ORIGIN||!
   if(m.ok){(m.ids||[]).forEach(id=>{REQ[id]=REQ[id]||{requestedAt:new Date().toISOString()};SEL.delete(id)});render();$('note').textContent=`詳しい要約のリクエストを ${(m.ids||[]).length} 件記録しました`}
   else{$('note').textContent='リクエストの記録に失敗: '+(m.error||'');updBar()}}});
 $('del').addEventListener('click',()=>{const rmd=new Set(D.filter(x=>x.removed).map(x=>x.videoId));const ids=[...SEL].filter(i=>!rmd.has(i));if(!ids.length){$('note').textContent='選んだ動画はすべて削除済みです';return}
- if(!EXT){const T=new Map(D.map(x=>[x.videoId,x.title]));const lines=ids.map(i=>`${i}\t${(T.get(i)||'').replace(/[\t\n]/g,' ')}`).join('\n');
-  const NEW='https://github.com/kimiharu-kitatani/wl-summary/issues/new?title='+encodeURIComponent(`削除リクエスト（${ids.length}件）`)+'&labels=delete-request';
-  const url=NEW+'&body='+encodeURIComponent(lines);
-  if(url.length>7000){navigator.clipboard?.writeText(lines);$('note').textContent='件数が多いため一覧をコピーしました。開いたIssueの本文に貼り付けてください';window.open(NEW,'_blank','noopener')}
-  else{window.open(url,'_blank','noopener');$('note').textContent='GitHubのIssue画面を開きました。「Create」を押すと削除リクエストになります'}
-  return}
+ if(!EXT){window.requestMobileDelete(ids);return}
  if(!confirm(`選んだ${ids.length}件をYouTubeの「後で見る」から削除します。よろしいですか？`))return;
  BUSY=true;done=0;total=ids.length;$('note').textContent=`削除中… 0/${total}`;updBar();window.postMessage({type:'WL_DELETE',ids},ORIGIN)});
 $('det').addEventListener('click',()=>{const ids=[...SEL];if(!ids.length)return;
@@ -753,5 +748,6 @@ if ($('sync-mobile') && $('sync')) {
 const origSetExt = typeof setExt === 'function' ? setExt : null;
 
 </script>
+<script src="mobile-delete.js"></script>
 </body>
 </html>
