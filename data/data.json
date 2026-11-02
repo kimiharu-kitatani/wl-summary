@@ -85,7 +85,10 @@
    "動画編集は約95%をAI任せ、サムネとタイトルは自分で調整"
   ],
   "captions": "ok",
-  "upload_date": "2026-10-19"
+  "upload_date": "2026-10-19",
+  "removed": true,
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "removed_reason": "deleted_from_viewer"
  },
  {
   "videoId": "ytRE9CIedUc",
@@ -155,7 +158,10 @@
    "AIを使えることに満足せず「それで何を作ったか」を問うべき"
   ],
   "captions": "ok",
-  "upload_date": "2026-09-04"
+  "upload_date": "2026-09-04",
+  "removed": true,
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "removed_reason": "deleted_from_viewer"
  },
  {
   "videoId": "_KI6rlU_DJ4",
@@ -250,7 +256,10 @@
    "長いプロンプトは音声入力で作るのがおすすめ"
   ],
   "captions": "ok",
-  "upload_date": "2026-09-03"
+  "upload_date": "2026-09-03",
+  "removed": true,
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "removed_reason": "deleted_from_viewer"
  },
  {
   "videoId": "nc-k_UDIp_A",

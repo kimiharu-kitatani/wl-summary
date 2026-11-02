@@ -1025,5 +1025,72 @@
   },
   "removed_at": "2026-11-02T12:02:25.868Z",
   "reason": "deleted_from_viewer"
+ },
+ "Hn__5ppCOUY": {
+  "item": {
+   "videoId": "Hn__5ppCOUY",
+   "title": "【続】僕達のAIの使い方、全部見せます。",
+   "channel": "monograph/ 堀口英剛、他 3 チャンネル",
+   "duration": "33:01",
+   "url": "https://www.youtube.com/watch?v=Hn__5ppCOUY",
+   "wl_index": 4,
+   "thumbnail": "https://i.ytimg.com/vi/Hn__5ppCOUY/mqdefault.jpg",
+   "summary_ja": "前回好評だった「AIの使い方」の続編として、クリエイター仲間が朝のボクシング後に雑談形式で今のAI環境を語る動画。全員クロード中心で、自作のUIやエージェント体制に仕事を集約しているという。",
+   "points": [
+    "メインはクロード（Opus 5.5）、サブにCodexなどを併用",
+    "秘書と部下に分かれるGrok Botの設計を高く評価",
+    "動画編集は約95%をAI任せ、サムネとタイトルは自分で調整"
+   ],
+   "captions": "ok",
+   "upload_date": "2026-10-19"
+  },
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "reason": "deleted_from_viewer"
+ },
+ "ZgHrjyluLH8": {
+  "item": {
+   "videoId": "ZgHrjyluLH8",
+   "title": "AIは格差を拡げる：私のキャリア生存戦略を解説・共有します",
+   "channel": "クウキデザイン |  Kuuki Design",
+   "duration": "12:02",
+   "url": "https://www.youtube.com/watch?v=ZgHrjyluLH8",
+   "wl_index": 8,
+   "thumbnail": "https://i.ytimg.com/vi/ZgHrjyluLH8/mqdefault.jpg",
+   "summary_ja": "元Google社員の投稿者が、AIは格差を縮めるどころか拡大していると、シリコンバレーとGoogle社内での経験から語る動画です。同じツールを使っていても、目的を持ってAIを業務に組み込む人と、なんとなく使う人とで差が広がったといいます。AIで浮いた時間や利益は、手を動かす労働者ではなく、AIの使い道を決める経営側に流れる構造だと指摘しています。生き残り戦略として、自分で決めたものをお金が取れるレベルまでやり遂げ、実績を積むことを勧めています。",
+   "points": [
+    "AIで仕事が速くなるのは「誰でもできる仕事」なので、その速さには値段がつかなくなる",
+    "IMFも資本側と労働者側の差が広がると見ている",
+    "アイデアを出す人は多いが、最後まで仕上げて売り切れる人材は少ない",
+    "投稿者は高年収のGoogleを辞め、動画・記事・コンサル・音楽などで収益化まで実践中",
+    "AIを使えることに満足せず「それで何を作ったか」を問うべき"
+   ],
+   "captions": "ok",
+   "upload_date": "2026-09-04"
+  },
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "reason": "deleted_from_viewer"
+ },
+ "OaPp_4eNO4M": {
+  "item": {
+   "videoId": "OaPp_4eNO4M",
+   "title": "AI の実力を引き出すためには、300文字以上のプロンプトを目指そう",
+   "channel": "勝間和代が徹底的にマニアックな話をするYouTube",
+   "duration": "2:36",
+   "url": "https://www.youtube.com/watch?v=OaPp_4eNO4M",
+   "wl_index": 13,
+   "thumbnail": "https://i.ytimg.com/vi/OaPp_4eNO4M/mqdefault.jpg",
+   "summary_ja": "AIに入れるプロンプトは300文字以上を目指そう、と勧める短い動画です。プロンプトが短いとAIは確率的に話が拡散し、どうでもいい答えや凡庸な答えしか返さないと説明しています。前提条件、制約条件、本当に聞きたいこと、これまで調べたことなどをできるだけ多く入れるのがよいそうです。キーボードで打つのは大変なので、音声入力の併用を勧めています。",
+   "points": [
+    "50〜80文字のプロンプトでは変な答えが返ってきて当然",
+    "AIは検索エンジンではなく「仮説生成マシン」なので、前提を山ほど入れる",
+    "最初から300文字が無理なら、やり取りを重ねて情報を足していく",
+    "投稿者は同じパラメーター数なら速いという理由でGemini（Pro）を使用",
+    "長いプロンプトは音声入力で作るのがおすすめ"
+   ],
+   "captions": "ok",
+   "upload_date": "2026-09-03"
+  },
+  "removed_at": "2026-11-02T12:08:28.859Z",
+  "reason": "deleted_from_viewer"
  }
 }
